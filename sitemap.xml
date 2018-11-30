@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="https://addy-dclxvi.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/about/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/post/fish-shell/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/debian/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/lxmenu/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/menu/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/openbox/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/post/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/ricing/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/shell/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/</loc>
+    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/terminal/</loc>
+    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

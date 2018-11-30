@@ -1,0 +1,28 @@
+.logo {
+  font-family: Athelas !important;
+  font-size: 30px !important;
+}
+
+.header .site-navbar .menu .menu-item-link {
+  font-size: 16px !important;
+}
+
+.post .post-header .post-link {
+ font-size: 28px !important;
+}
+
+.post .post-header .post-title {
+ font-size: 28px !important;
+}
+
+.footer .copyright {
+  margin-bottom: 2.4em !important;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+.post-reward .qr-code .qr-code-image {
+  width:100% !important;
+}

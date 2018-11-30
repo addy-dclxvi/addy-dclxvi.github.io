@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Addy&#39;s Blog</title>
+    <link>https://addy-dclxvi.github.io/categories/linux/</link>
+    <description>Recent content in Linux on Addy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Addy</copyright>
+    <lastBuildDate>Fri, 30 Nov 2018 18:16:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://addy-dclxvi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fish, The Friendly Interactive Shell. You Should Try It!</title>
+      <link>https://addy-dclxvi.github.io/post/fish-shell/</link>
+      <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/fish-shell/</guid>
+      <description>Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. My favourite features of fish are..
+ Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options. Hit enter to choose it.</description>
+    </item>
+    
+    <item>
+      <title>Automatically Generate Openbox Applications Menu Using LXMenu Data</title>
+      <link>https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/</link>
+      <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/</guid>
+      <description>With regard to Openbox Menus, there are two types: static menus and dynamic menus. Dynamic menus also well known as pipe menu. In this article, I will explain how to use pipe menu to generate applications list easily. Because, writing our applications list manually to menu.xml will be exhausting. I use Debian by the way. So some command line in this article, like how to install packages, will use Debian way.</description>
+    </item>
+    
+  </channel>
+</rss>

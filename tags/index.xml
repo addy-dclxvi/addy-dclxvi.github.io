@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Addy&#39;s Blog</title>
+    <link>https://addy-dclxvi.github.io/tags/</link>
+    <description>Recent content in Tags on Addy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Addy</copyright>
+    <lastBuildDate>Tue, 27 Nov 2018 18:44:21 +0700</lastBuildDate>
+    
+	<atom:link href="https://addy-dclxvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian</title>
+      <link>https://addy-dclxvi.github.io/tags/debian/</link>
+      <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://addy-dclxvi.github.io/tags/linux/</link>
+      <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lxmenu</title>
+      <link>https://addy-dclxvi.github.io/tags/lxmenu/</link>
+      <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/lxmenu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Menu</title>
+      <link>https://addy-dclxvi.github.io/tags/menu/</link>
+      <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/menu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openbox</title>
+      <link>https://addy-dclxvi.github.io/tags/openbox/</link>
+      <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/openbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ricing</title>
+      <link>https://addy-dclxvi.github.io/tags/ricing/</link>
+      <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/ricing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://addy-dclxvi.github.io/tags/shell/</link>
+      <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>https://addy-dclxvi.github.io/tags/terminal/</link>
+      <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
