@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/post/configuring-urxvt/</loc>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/post/fish-shell/</loc>
     <lastmod>2018-11-30T18:16:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -44,15 +51,15 @@
   </url>
   
   <url>
-    <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
-    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
-    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -80,14 +87,14 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/post/</loc>
-    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/ricing/</loc>
-    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -108,7 +115,14 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/terminal/</loc>
-    <lastmod>2018-11-30T18:16:14+07:00</lastmod>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/urxvt/</loc>
+    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

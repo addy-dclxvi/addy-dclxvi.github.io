@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Fish, The Friendly Interactive Shell. You Should Try It!</title>
+      <title>Fish, The Friendly Interactive Shell</title>
       <link>https://addy-dclxvi.github.io/post/fish-shell/</link>
       <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/fish-shell/</guid>
-      <description>Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. My favourite features of fish are..
- Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options. Hit enter to choose it.</description>
+      <description>Introduction Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. My favourite features of fish are..
+ Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options.</description>
     </item>
     
   </channel>
