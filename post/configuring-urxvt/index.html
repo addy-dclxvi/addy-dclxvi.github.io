@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2018-11-30T21:44:11&#43;07:00" />
 <meta itemprop="dateModified" content="2018-11-30T21:44:11&#43;07:00" />
-<meta itemprop="wordCount" content="1154">
+<meta itemprop="wordCount" content="1187">
 
 
 
@@ -246,13 +246,13 @@ if (!doNotTrack) {
       
       <div class="post-meta">
         <time datetime="2018-11-30" class="post-time">
-          Friday, 30 November 2018
+          Friday, 30 Nov 2018
         </time>
         <div class="post-category">
             <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 1154 words </span>
+        <span class="more-meta"> 1187 words </span>
           <span class="more-meta"> 6 min read </span>
 
         
@@ -275,11 +275,12 @@ if (!doNotTrack) {
 <p>URxvt is a customizable terminal emulator forked from rxvt.
 Features of rxvt-unicode include international language support through Unicode,
 transparency, the ability to display multiple font types and support for Perl extensions.
-URxvt is one of the most popular terminal emulator in UNIX world.
+URxvt is one of the most popular terminal emulator in UNIX world, especially on Unixporn.
 It&rsquo;s well known for being lightweight and riceable.
-But just like any other software in Linux, it&rsquo;s ugly out of the box.
-URxvt configurations is commonly placed in <strong>~/.Xresources</strong>.
-We will edit it. But now we need to install it first.</p>
+But just like any other software in UNIX world, it&rsquo;s ugly out of the box.
+So, we should configure it before we use it.
+URxvt configurations is commonly placed in <strong>~/.Xresources</strong> file.
+We will edit it. But first, we need to install it first.</p>
 
 <h2 id="installation">Installation</h2>
 
@@ -292,8 +293,8 @@ We will edit it. But now we need to install it first.</p>
 <pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install rxvt-unicode xsel</code></pre></td></tr></table>
 </div>
 </div>
-<p>rxvt-unicode is the package name of URxvt.
-And xsel is a clipboard manager, I install it because URxvt is not shipped by
+<p><strong>rxvt-unicode</strong> is the package name of URxvt.
+And <strong>xsel</strong> is a clipboard manager, I install it because URxvt is not shipped with
 copy paste by default. We will combine it with a Perl extension to send marked text to xsel.
 You can get it from Muennich&rsquo;s <a href="https://github.com/muennich/urxvt-perls">urxvt-perls</a> repository.
 Some extensions marked as deprecated, but it still works for me without any issue.</p>
@@ -305,7 +306,8 @@ Some extensions marked as deprecated, but it still works for me without any issu
 <pre class="chroma"><code class="language-shell" data-lang="shell">git clone https://github.com/muennich/urxvt-perls</code></pre></td></tr></table>
 </div>
 </div>
-<p>Enter the urxvt-perls folder, then copy <strong>keyboard-select</strong>, <strong>clipboard</strong>, and <strong>url-select</strong>
+<p>Enter the  urxvt-perls folder,
+then copy <strong>keyboard-select</strong>, <strong>clipboard</strong>, and <strong>url-select</strong>
 to <strong>~/.urxvt/ext</strong></p>
 
 
@@ -328,7 +330,7 @@ Colorscheme is one of most important part of terminal customization.
 URxvt uses base16 style colorscheme. It stores background color, foreground color,
 cursor color, black, red, green, yellow, blue, magenta, cyan, and white.
 Actually it could store more color for bold, underline, and many others.
-But I let it default, it will take color from other stored colors automatically.</p>
+But I let it to be default, it will take color from other stored colors automatically.</p>
 
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -416,7 +418,7 @@ But I let it default, it will take color from other stored colors automatically.
 <p>It&rsquo;s my selfmade colorscheme, not very good.
 You can do some experiment with colorscheme by yourself later.
 Or maybe you could visit <a href="https://terminal.sexy">https://terminal.sexy</a> to get some colorscheme examples.
-Then, we configure the appearance.</p>
+But now, we need to configure the appearance first.</p>
 
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -459,10 +461,12 @@ URxvt.iso14755: false</code></pre></td></tr></table>
 </div>
 </div>
 
-<p>URxvt has an ability to load XLFD for bitmap font.
+<p>URxvt has an ability to load
+<a href="https://en.wikipedia.org/wiki/X_logical_font_description">XLFD</a> for bitmap font.
 It&rsquo;s my selfmade font by the way, and I haven&rsquo;t uploaded it.
 So, please replace <code>-*-rissole-*</code> with other font.
-Maybe with Iosevka font. It&rsquo;s beautiful and currently rising in popularity.
+Maybe with <a href="https://github.com/be5invis/Iosevka">Iosevka</a> font.
+It&rsquo;s beautiful and currently rising in popularity.
 Iosevka is an xft font. So, the configuration syntax like this..</p>
 
 <div class="highlight"><div class="chroma">
@@ -495,13 +499,16 @@ Geometry handles the URxvt size on launch. InternalBorder handles the terminal p
 for aesthetic reason. But don&rsquo;t set the paddings too much, we should care about usability too.
 CursorBlink true makes the cursor blinking, for visibility reason.
 CursorUnderline makes the block cursor became an underline, but I set it to false for now.
-The underline on this version of URxvt is too thin, and nearly invisible.
-It also vanishes on full-pipe character. But they have been fixed on newer version of URxvt.
-UrgentOnBell makes URxvt to be able to send need-an-attention signal to window manager / taskbar.
+The underline on this version of URxvt is too thin (I&rsquo;m still using the old version
+because I&rsquo;m on Debian Jessie), and nearly invisible.
+It also vanishes on full-pipe character.
+But those problems have been fixed on the newer version of URxvt.
+UrgentOnBell makes URxvt to be able to send <em>need-an-attention</em> signal
+to window manager / taskbar.
 Depth: 24 makes URxvt couldn&rsquo;t use true transparency, because I don&rsquo;t need it.
 You could change it to Depth: 32 to enable true transparency support.
 Iso14755: false to disable the annoying warning about Iso type.
-Now we configure some keybind those are not available on URxvt by default
+Now let&rsquo;s configure some keybinds those are not available on URxvt by default,
 but I can&rsquo;t live without.</p>
 
 <div class="highlight"><div class="chroma">
@@ -568,7 +575,7 @@ URxvt.urlButton: 1</code></pre></td></tr></table>
 <p>Remember the Perl Extensions we copied before?
 Now it&rsquo;s the time to load them and make keybinds to call them.
 <strong>M</strong> means meta, or in these modern days called <strong>Alt</strong>.
-To copy a text in the terminal, mark them using mouse then hit <strong>Alt+C</strong>.
+To copy some text in the terminal, mark them using mouse then hit <strong>Alt+C</strong>.
 To paste it on URxvt, hit <strong>Alt+V</strong>.
 But if you paste it on other app, just use <strong>Ctrl+V</strong> normally.
 That Perl Extension also contains other useful features.
@@ -782,7 +789,7 @@ And the change of URxvt will be applied on next launch.</p>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Friday, 30 November 2018</span>
+    <span class="item-content">Friday, 30 Nov 2018</span>
   </p>
   
   <p class="copyright-item">
@@ -819,6 +826,19 @@ And the change of URxvt will be applied on next launch.</p>
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/configuring-ncmpcpp/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">My Way of Configuring Ncmpcpp Music Player</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
           <a class="next" href="/post/fish-shell/">
             <span class="next-text nav-default">Fish, The Friendly Interactive Shell</span>

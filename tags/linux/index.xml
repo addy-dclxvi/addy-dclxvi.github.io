@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Addy</copyright>
-    <lastBuildDate>Fri, 30 Nov 2018 21:44:11 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 21:34:30 +0700</lastBuildDate>
     
 	<atom:link href="https://addy-dclxvi.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Way of Configuring Ncmpcpp Music Player</title>
+      <link>https://addy-dclxvi.github.io/post/configuring-ncmpcpp/</link>
+      <pubDate>Sat, 01 Dec 2018 21:34:30 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/configuring-ncmpcpp/</guid>
+      <description>Introduction ncmpcpp is an mpd client. In short, it&amp;rsquo;s the frontend of mpd. The actual music player is mpd, but managing mpd with barehand is not possible. So, the most common way to control mpd is using ncmpcpp, to list the library, arranging the playlist, choosing the music, and other actions. mpd + ncmpcpp duo usually also paired with mpc for control.
+info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</description>
+    </item>
     
     <item>
       <title>Configuring URxvt to Make It Usable and Less Ugly</title>
@@ -18,7 +28,7 @@
       <pubDate>Fri, 30 Nov 2018 21:44:11 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/configuring-urxvt/</guid>
-      <description>Introduction URxvt is a customizable terminal emulator forked from rxvt. Features of rxvt-unicode include international language support through Unicode, transparency, the ability to display multiple font types and support for Perl extensions. URxvt is one of the most popular terminal emulator in UNIX world. It&amp;rsquo;s well known for being lightweight and riceable. But just like any other software in Linux, it&amp;rsquo;s ugly out of the box. URxvt configurations is commonly placed in ~/.</description>
+      <description>Introduction URxvt is a customizable terminal emulator forked from rxvt. Features of rxvt-unicode include international language support through Unicode, transparency, the ability to display multiple font types and support for Perl extensions. URxvt is one of the most popular terminal emulator in UNIX world, especially on Unixporn. It&amp;rsquo;s well known for being lightweight and riceable. But just like any other software in UNIX world, it&amp;rsquo;s ugly out of the box.</description>
     </item>
     
     <item>
@@ -27,7 +37,7 @@
       <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/fish-shell/</guid>
-      <description>Introduction Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. My favourite features of fish are..
+      <description>Introduction Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. Some of my favourite features of fish are..
  Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options.</description>
     </item>
     

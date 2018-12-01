@@ -18,7 +18,7 @@
       <pubDate>Fri, 30 Nov 2018 21:44:11 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/configuring-urxvt/</guid>
-      <description>Introduction URxvt is a customizable terminal emulator forked from rxvt. Features of rxvt-unicode include international language support through Unicode, transparency, the ability to display multiple font types and support for Perl extensions. URxvt is one of the most popular terminal emulator in UNIX world. It&amp;rsquo;s well known for being lightweight and riceable. But just like any other software in Linux, it&amp;rsquo;s ugly out of the box. URxvt configurations is commonly placed in ~/.</description>
+      <description>Introduction URxvt is a customizable terminal emulator forked from rxvt. Features of rxvt-unicode include international language support through Unicode, transparency, the ability to display multiple font types and support for Perl extensions. URxvt is one of the most popular terminal emulator in UNIX world, especially on Unixporn. It&amp;rsquo;s well known for being lightweight and riceable. But just like any other software in UNIX world, it&amp;rsquo;s ugly out of the box.</description>
     </item>
     
   </channel>

@@ -9,7 +9,12 @@ html {
 
 h2 {
   font-family: 'PT Sans Narrow', sans-serif !important;
-  font-size: 22px !important;
+  font-size: 28px !important;
+}
+
+h3 {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 24px !important;
 }
 
 body {
@@ -30,6 +35,11 @@ body {
   font-size: 20px !important;
 }
 
+.mobile-menu .mobile-menu-list a {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 18px;
+}
+
 .post .post-header .post-link {
   font-family: 'PT Sans Narrow', sans-serif !important;
   font-size: 38px !important;
@@ -47,7 +57,7 @@ body {
 
 .post .post-content code, .post .post-content pre {
   font-family: 'PT Mono', monospace !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 
 .post .shortcode-notice p {

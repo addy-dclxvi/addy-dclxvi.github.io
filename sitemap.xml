@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/post/configuring-ncmpcpp/</loc>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/post/configuring-urxvt/</loc>
     <lastmod>2018-11-30T21:44:11+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,14 +59,14 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
-    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
-    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -79,6 +86,20 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/tags/music/</loc>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://addy-dclxvi.github.io/tags/ncmpcpp/</loc>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/tags/openbox/</loc>
     <lastmod>2018-11-27T18:44:21+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -87,14 +108,14 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/post/</loc>
-    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/ricing/</loc>
-    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -115,7 +136,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/terminal/</loc>
-    <lastmod>2018-11-30T21:44:11+07:00</lastmod>
+    <lastmod>2018-12-01T21:34:30+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

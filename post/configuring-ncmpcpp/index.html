@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Automatically Generate Openbox Applications Menu Using LXMenu Data - Addy&#39;s Blog</title>
+  <title>My Way of Configuring Ncmpcpp Music Player - Addy&#39;s Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,8 +22,8 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Addy" /><meta name="description" content="Automatically Generate Openbox Applications Menu Using LXMenu Data on Debian" />
-<meta name="keywords" content="openbox, debian, linux, menu, ricing, lxmenu" />
+<meta name="author" content="Addy" /><meta name="description" content="My simple way how to setup ncmpcpp music player" />
+<meta name="keywords" content="linux, ricing, music, ncmpcpp, terminal" />
 
 
 
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.51" />
 
 
-<link rel="canonical" href="https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/" />
+<link rel="canonical" href="https://addy-dclxvi.github.io/post/configuring-ncmpcpp/" />
 
 
 
@@ -58,26 +58,26 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Automatically Generate Openbox Applications Menu Using LXMenu Data" />
-<meta property="og:description" content="Automatically Generate Openbox Applications Menu Using LXMenu Data on Debian" />
+<meta property="og:title" content="My Way of Configuring Ncmpcpp Music Player" />
+<meta property="og:description" content="My simple way how to setup ncmpcpp music player" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/" /><meta property="article:published_time" content="2018-11-27T18:44:21&#43;07:00"/>
-<meta property="article:modified_time" content="2018-11-27T18:44:21&#43;07:00"/>
+<meta property="og:url" content="https://addy-dclxvi.github.io/post/configuring-ncmpcpp/" /><meta property="article:published_time" content="2018-12-01T21:34:30&#43;07:00"/>
+<meta property="article:modified_time" content="2018-12-01T21:34:30&#43;07:00"/>
 
-<meta itemprop="name" content="Automatically Generate Openbox Applications Menu Using LXMenu Data">
-<meta itemprop="description" content="Automatically Generate Openbox Applications Menu Using LXMenu Data on Debian">
-
-
-<meta itemprop="datePublished" content="2018-11-27T18:44:21&#43;07:00" />
-<meta itemprop="dateModified" content="2018-11-27T18:44:21&#43;07:00" />
-<meta itemprop="wordCount" content="347">
+<meta itemprop="name" content="My Way of Configuring Ncmpcpp Music Player">
+<meta itemprop="description" content="My simple way how to setup ncmpcpp music player">
 
 
+<meta itemprop="datePublished" content="2018-12-01T21:34:30&#43;07:00" />
+<meta itemprop="dateModified" content="2018-12-01T21:34:30&#43;07:00" />
+<meta itemprop="wordCount" content="878">
 
-<meta itemprop="keywords" content="openbox,debian,linux,menu,ricing,lxmenu," />
+
+
+<meta itemprop="keywords" content="linux,ricing,music,ncmpcpp,terminal," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Automatically Generate Openbox Applications Menu Using LXMenu Data"/>
-<meta name="twitter:description" content="Automatically Generate Openbox Applications Menu Using LXMenu Data on Debian"/>
+<meta name="twitter:title" content="My Way of Configuring Ncmpcpp Music Player"/>
+<meta name="twitter:description" content="My simple way how to setup ncmpcpp music player"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -242,18 +242,18 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Automatically Generate Openbox Applications Menu Using LXMenu Data</h1>
+      <h1 class="post-title">My Way of Configuring Ncmpcpp Music Player</h1>
       
       <div class="post-meta">
-        <time datetime="2018-11-27" class="post-time">
-          Tuesday, 27 Nov 2018
+        <time datetime="2018-12-01" class="post-time">
+          Saturday, 1 Dec 2018
         </time>
         <div class="post-category">
             <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 347 words </span>
-          <span class="more-meta"> 2 min read </span>
+        <span class="more-meta"> 878 words </span>
+          <span class="more-meta"> 5 min read </span>
 
         
         
@@ -272,44 +272,59 @@ if (!doNotTrack) {
 
 <h2 id="introduction">Introduction</h2>
 
-<p>With regard to Openbox Menus,
-there are two types: static menus and dynamic menus.
-Dynamic menus also well known as pipe menu.
-In this article, I will explain how to use pipe menu to generate applications list easily.
-Because, writing our applications list manually to <strong>menu.xml</strong> will be exhausting.
-I use Debian by the way. So some command line in this article, like how to install packages,
-will use Debian way. But don&rsquo;t worry, it should be working in other distros too.
-But will slightly different.</p>
+<p><strong>ncmpcpp</strong> is an mpd client. In short, it&rsquo;s the frontend of mpd.
+The actual music player is mpd, but managing mpd with barehand is not possible.
+So, the most common way to control mpd is using ncmpcpp,
+to list the library, arranging the playlist, choosing the music, and other actions.
+<strong>mpd + ncmpcpp</strong> duo usually also paired with <strong>mpc</strong> for control.</p>
 
-<h2 id="install-openbox-menu-lxmenu-data">Install Openbox Menu &amp; LXMenu Data</h2>
+<div class="shortcode-notice info">
+  <div class="shortcode-notice-title info">
+    
+      info
+    
+  </div>
+  <p>Don&rsquo;t forget that ncmpcpp is a terminal applications.</p>
 
-<p>Openbox Menu and LXMenu Data are available in the Debian repository since Jessie.
-So, we don&rsquo;t need to compile it manually. Just get it using APT.</p>
+</div>
+
+
+<h2 id="installation">Installation</h2>
+
+<p>They are available in almost every distro repository.
+So, just get them all easily. I use Debian by the way.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">sudo apt-get install mpd mpc ncmpcpp</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="configurations">Configurations</h2>
+
+<h3 id="mpd">mpd</h3>
+
+<p>On Debian, after installing mpd, it will be launched as system service automatically,
+which is annoying. I want to run mpd as user process instead of system service.
+So, I disable the mpd system service.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install openbox-menu lxmenu-data</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl disable mpd.service
+sudo systemctl disable mpd.socket</code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="edit-menu-xml">Edit Menu XML</h2>
+<p>Now, mpd will use the user configuration in <strong>~/.mpd/mpd.conf</strong>
+instead of the system wide mpd configuration in <strong>/etc/mpd.conf</strong>.
+Here is my mpd configuration..</p>
 
-<p>Now we need to edit the menu.xml to place the applications menu taken from lxmenu-data.
-Paste the following code anywhere you want between <code>&lt;menu id=&quot;root-menu&quot; label=&quot;Openbox 3&quot;&gt;</code>
-and <code>&lt;/menu&gt;</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;menu</span> <span class="na">execute=</span><span class="s">&#34;openbox-menu lxde-applications.menu&#34;</span> <span class="na">id=</span><span class="s">&#34;apps&#34;</span> <span class="na">label=</span><span class="s">&#34;Applications&#34;</span><span class="nt">/&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Just in case you curious with what my complete menu.xml looks like, here is it.
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
+<pre class="chroma"><code class="language-conf" data-lang="conf"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -327,119 +342,233 @@ and <code>&lt;/menu&gt;</code>.</p>
 </span><span class="lnt">16
 </span><span class="lnt">17
 </span><span class="lnt">18
-</span><span class="hl"><span class="lnt">19
-</span></span><span class="lnt">20
+</span><span class="lnt">19
+</span><span class="lnt">20
 </span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span class="nt">&lt;openbox_menu</span>
-    <span class="na">xmlns=</span><span class="s">&#34;http://openbox.org/&#34;</span>
-    <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-    <span class="na">xsi:schemaLocation=</span><span class="s">&#34;http://openbox.org/
-</span><span class="s">    file:///usr/share/openbox/menu.xsd&#34;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;menu</span> <span class="na">id=</span><span class="s">&#34;root-menu&#34;</span> <span class="na">label=</span><span class="s">&#34;Openbox 3&#34;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Terminal emulator&#34;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;execute&gt;</span>x-terminal-emulator<span class="nt">&lt;/execute&gt;</span>
-            <span class="nt">&lt;/action&gt;</span>
-        <span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Web browser&#34;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;execute&gt;</span>x-www-browser<span class="nt">&lt;/execute&gt;</span>
-            <span class="nt">&lt;/action&gt;</span>
-        <span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;separator</span> <span class="nt">/&gt;</span>
-<span class="hl">        <span class="nt">&lt;menu</span> <span class="na">execute=</span><span class="s">&#34;openbox-menu lxde-applications.menu&#34;</span> <span class="na">id=</span><span class="s">&#34;apps&#34;</span> <span class="na">label=</span><span class="s">&#34;Applications&#34;</span><span class="nt">/&gt;</span>
-</span>        <span class="nt">&lt;menu</span> <span class="na">id=</span><span class="s">&#34;client-list-menu&#34;</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;separator</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Configurations&#34;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;execute&gt;</span>obconf<span class="nt">&lt;/execute&gt;</span>
-            <span class="nt">&lt;/action&gt;</span>
-        <span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Reconfigure&#34;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Reconfigure&#34;</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;separator</span> <span class="nt">/&gt;</span>
-        <span class="nt">&lt;menu</span> <span class="na">id=</span><span class="s">&#34;exit&#34;</span> <span class="na">label=</span><span class="s">&#34;Exit&#34;</span> <span class="nt">&gt;</span>
-            <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Logout&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Exit&#34;</span> <span class="nt">/&gt;</span>
-            <span class="nt">&lt;/item&gt;</span>
-            <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Suspend&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;execute&gt;</span>systemctl suspend<span class="nt">&lt;/execute&gt;</span>
-                <span class="nt">&lt;/action&gt;</span>
-            <span class="nt">&lt;/item&gt;</span>
-            <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Hibernate&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;execute&gt;</span>systemctl hibernate<span class="nt">&lt;/execute&gt;</span>
-                <span class="nt">&lt;/action&gt;</span>
-            <span class="nt">&lt;/item&gt;</span>
-            <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Reboot&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;execute&gt;</span>systemctl reboot<span class="nt">&lt;/execute&gt;</span>
-                <span class="nt">&lt;/action&gt;</span>
-            <span class="nt">&lt;/item&gt;</span>
-            <span class="nt">&lt;item</span> <span class="na">label=</span><span class="s">&#34;Shutdown&#34;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;execute&gt;</span>systemctl poweroff<span class="nt">&lt;/execute&gt;</span>
-                <span class="nt">&lt;/action&gt;</span>
-            <span class="nt">&lt;/item&gt;</span>
-        <span class="nt">&lt;/menu&gt;</span>
-    <span class="nt">&lt;/menu&gt;</span>
-<span class="nt">&lt;/openbox_menu&gt;</span></code></pre></td></tr></table>
-</div>
-</div></p>
+<pre class="chroma"><code class="language-conf" data-lang="conf">music_directory &#34;/media/addy/Media/musik/&#34;
+playlist_directory &#34;/media/addy/Media/musik/&#34;
+db_file &#34;/home/addy/.mpd/mpd.db&#34;
+log_file &#34;/home/addy/.mpd/mpd.log&#34;
+pid_file &#34;/home/addy/.mpd/mpd.pid&#34;
+state_file &#34;/home/addy/.mpd/mpdstate&#34;
 
-<p>Reconfigure Openbox then see the result</p>
+audio_output {
+type &#34;pulse&#34;
+name &#34;pulse audio&#34;
+}
+
+audio_output {
+type &#34;fifo&#34;
+name &#34;my_fifo&#34;
+path &#34;/tmp/mpd.fifo&#34;
+format &#34;44100:16:2&#34;
+}
+
+bind_to_address &#34;127.0.0.1&#34;
+port &#34;6600&#34;</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>I do dualboot with Windows 7.
+Even I&rsquo;m very very rare to boot Windows, I&rsquo;m still keeping it.
+Just in case one day I will need it.
+I store my musics in an NTFS partition called <strong>Media</strong>.
+So, if boot Windows I&rsquo;m still be able to enjoy my metal playlist.
+I mount that media partition automatically on boot to <strong>/media/addy/Media/musik/</strong>
+by editing the <strong>/etc/fstab</strong> file.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre class="chroma"><code class="language-fstab" data-lang="fstab"><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">openbox --reconfigure</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-fstab" data-lang="fstab">UUID=01D2AF3E91F4D320 /media/addy/Media ntfs rw,nosuid,nodev,noatime,allow_other 0 0</code></pre></td></tr></table>
 </div>
 </div>
-<p><a href="https://u.cubeupload.com/addy15/openboxmenu.png"><img src="https://u.cubeupload.com/addy15/openboxmenu.png" alt="openbox-menu.png" /></a></p>
+<p>That&rsquo;s the line I add to my fstab file. I put it in the most bottom line.
+I get the UUID of my partition using <code>sudo blkid</code> command.
+The change will be applied on the next boot.</p>
 
-<p>Thanks for reading!</p>
+<p>Okay, back to the mpd configuration.
+Replace <em>addy</em> in line number 3 to 6 with your own username.
+Just in case you forgot your username, you could get it using <code>whoami</code> command.
+I use PulseAudio for my sound. If you&rsquo;re using pure ALSA,
+try to replace the line number 60 to 63 with..</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-conf" data-lang="conf"><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-conf" data-lang="conf">audio_output {
+type &#34;alsa&#34;
+name &#34;alsa for audio soundcard&#34;
+mixer_type &#34;software&#34;
+}</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="ncmpcpp">ncmpcpp</h3>
+
+<p>ncmpcpp configuration is placed in <strong>~/.ncmpcpp/config</strong> file.</p>
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box">
+<figure  itemprop="associatedMedia"
+  itemscope itemtype="http://schema.org/ImageObject" >
+    <div class="img">
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/ncmpcppconfig.png" />
+    </div>
+    <a href="https://u.cubeupload.com/addy15/ncmpcppconfig.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<p>I tried to paste the code to this page, but the syntax was conflicted with
+<a href="https://gohugo.io/content-management/shortcodes/">Hugo Shortcodes</a>.
+So, get the text file <a href="/file/ncmpcpp/config">here</a>. The square brackets are <em>comments</em>,
+just like <em>#</em> symbol. Just personal preference.
+The explanations of my ncmpcpp config would be very long if write them all here.
+The config is very rational, it&rsquo;s very easy to be understood only by reading it.
+But if you need more detailed explanations, it&rsquo;s available inside the manual pages.
+Use <code>man ncmpcpp</code> command to open it.</p>
+
+<h3 id="mpc">mpc</h3>
+
+<p>mpc has no configuration file. The tasks of mpc are just for simply controlling mpd.
+Like <code>mpc next</code>, <code>mpc prev</code>, <code>mpc toggle</code>, etc.
+The advantage is, we could bind those command to our multimedia keys.
+So, even the ncmpcpp is closed we still be able to control the mpd.
+I use Openbox, so I put those keybinds in <strong>rc.xml</strong></p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">478
+</span><span class="lnt">479
+</span><span class="lnt">480
+</span><span class="lnt">481
+</span><span class="lnt">482
+</span><span class="lnt">483
+</span><span class="lnt">484
+</span><span class="lnt">485
+</span><span class="lnt">486
+</span><span class="lnt">487
+</span><span class="lnt">488
+</span><span class="lnt">489
+</span><span class="lnt">490
+</span><span class="lnt">491
+</span><span class="lnt">492
+</span><span class="lnt">493
+</span><span class="lnt">494
+</span><span class="lnt">495
+</span><span class="lnt">496
+</span><span class="lnt">497
+</span><span class="lnt">498
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">        <span class="c">&lt;!-- Keybindings to control mpd --&gt;</span>
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;XF86AudioStop&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>mpc stop<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span>
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;XF86AudioPlay&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>mpc toggle<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span>
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;XF86AudioPrev&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>mpc prev<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span>
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;XF86AudioNext&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>mpc next<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h2 id="launch">Launch</h2>
+
+<p>By default, Debian (the king of automations) also placed the autostart for mpd in
+<strong>/etc/xdg/autostart/</strong>. If not, just simply add to your DE/WM autostart configuration.
+So, after we reach the desktop after boot, we only need to hit the Play button to listen
+the music (if there is a playlist stored).</p>
+
+<div class="shortcode-notice info">
+  <div class="shortcode-notice-title info">
+    
+      info
+    
+  </div>
+  <p>XDG global autostart needs <strong>python-xdg</strong> packages.</p>
+
+</div>
+
+
+<p>After mpd process is running (you could also manually run it by typing <code>mpd</code>
+in terminal), you can launch ncmpcpp music player by typing <code>ncmpcpp</code> in terminal.
+It will be blank by default, because we haven&rsquo;t load any playlist.</p>
+
+<p>I recommend You to update the playlist first. On ncmpcpp, hit <strong>U</strong> keyboard button.
+Just in case it doesn&rsquo;t work, Launch a new terminal then type <code>mpc update</code>.
+After it got finished. You can access your music library in ncmpcpp.
+Hit number 2 then navigate using Arrows keys, Enter, and Backspace.
+Hit Space to add an album or an artist
+recursively to the playlist. Hit number one to go back to the playlist.
+Hit enter to select and play music.</p>
+
+<p>
+
+<div class="box">
+<figure  itemprop="associatedMedia"
+  itemscope itemtype="http://schema.org/ImageObject" >
+    <div class="img">
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/albums.png" />
+    </div>
+    <a href="https://u.cubeupload.com/addy15/albums.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box">
+<figure  itemprop="associatedMedia"
+  itemscope itemtype="http://schema.org/ImageObject" >
+    <div class="img">
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/playlist.png" />
+    </div>
+    <a href="https://u.cubeupload.com/addy15/playlist.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p>My theme is pretty simple &amp; ugly. The only good thing of my setup is the
+glorious Dream Theater playlist. I really recommend you to listen <strong>Octavarium</strong> album.
+It&rsquo;s one of their best album. You could visit <a href="https://dotshare.it">https://dotshare.it</a> to discover
+more Configuration examples. And of course, visit <a href="https://reddit.com/r/unixporn">https://reddit.com/r/unixporn</a>
+for even more configuration examples. You will see a lot of ncmpcpp in that Subreddit.</p>
+
+<div class="shortcode-notice info">
+  <div class="shortcode-notice-title info">
+    
+      info
+    
+  </div>
+  <p>ncmpcpp has a lot other keybinds. Just read the manual pages to discover them.</p>
+
+</div>
+
+
+<p>And as always.. Thanks for reading!</p>
 
     </div>
 
@@ -452,7 +581,7 @@ and <code>&lt;/menu&gt;</code>.</p>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Tuesday, 27 Nov 2018</span>
+    <span class="item-content">Saturday, 1 Dec 2018</span>
   </p>
   
   <p class="copyright-item">
@@ -479,32 +608,31 @@ and <code>&lt;/menu&gt;</code>.</p>
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://addy-dclxvi.github.io/tags/openbox/">openbox</a>
-          <a href="https://addy-dclxvi.github.io/tags/debian/">debian</a>
           <a href="https://addy-dclxvi.github.io/tags/linux/">linux</a>
-          <a href="https://addy-dclxvi.github.io/tags/menu/">menu</a>
           <a href="https://addy-dclxvi.github.io/tags/ricing/">ricing</a>
-          <a href="https://addy-dclxvi.github.io/tags/lxmenu/">lxmenu</a>
+          <a href="https://addy-dclxvi.github.io/tags/music/">music</a>
+          <a href="https://addy-dclxvi.github.io/tags/ncmpcpp/">ncmpcpp</a>
+          <a href="https://addy-dclxvi.github.io/tags/terminal/">terminal</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/fish-shell/">
+        
+          <a class="next" href="/post/configuring-urxvt/">
+            <span class="next-text nav-default">Configuring URxvt to Make It Usable and Less Ugly</span>
+            <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Fish, The Friendly Interactive Shell</span>
-            <span class="prev-text nav-mobile">Prev</span>
           </a>
-        
       </nav>
     </footer>
   </article>
@@ -529,7 +657,7 @@ and <code>&lt;/menu&gt;</code>.</p>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/";
+      this.page.url = "https://addy-dclxvi.github.io/post/configuring-ncmpcpp/";
     };
     function load_disqus() {
       

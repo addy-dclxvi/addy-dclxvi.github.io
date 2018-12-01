@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ncmpcpp on Addy&#39;s Blog</title>
+    <link>https://addy-dclxvi.github.io/tags/ncmpcpp/</link>
+    <description>Recent content in Ncmpcpp on Addy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Addy</copyright>
+    <lastBuildDate>Sat, 01 Dec 2018 21:34:30 +0700</lastBuildDate>
+    
+	<atom:link href="https://addy-dclxvi.github.io/tags/ncmpcpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Way of Configuring Ncmpcpp Music Player</title>
+      <link>https://addy-dclxvi.github.io/post/configuring-ncmpcpp/</link>
+      <pubDate>Sat, 01 Dec 2018 21:34:30 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/configuring-ncmpcpp/</guid>
+      <description>Introduction ncmpcpp is an mpd client. In short, it&amp;rsquo;s the frontend of mpd. The actual music player is mpd, but managing mpd with barehand is not possible. So, the most common way to control mpd is using ncmpcpp, to list the library, arranging the playlist, choosing the music, and other actions. mpd + ncmpcpp duo usually also paired with mpc for control.
+info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</description>
+    </item>
+    
+  </channel>
+</rss>
