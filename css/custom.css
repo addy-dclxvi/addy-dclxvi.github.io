@@ -1,26 +1,66 @@
-.logo {
-  font-family: Athelas !important;
-  font-size: 30px !important;
-}
+@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
-.header .site-navbar .menu .menu-item-link {
+html {
   font-size: 16px !important;
 }
 
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 22px !important;
+}
+
+body {
+  font-family: 'PT Sans', serif !important;
+}
+
+.bg-llight {
+  background-image: url("/image/symphony.png") !important;
+}
+
+.logo {
+  font-family: 'Playball', cursive !important;
+  font-size: 36px !important;
+}
+
+.header .site-navbar .menu .menu-item-link {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 20px !important;
+}
+
 .post .post-header .post-link {
- font-size: 30px !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 38px !important;
 }
 
 .post .post-header .post-title {
- font-size: 30px !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 38px !important;
+}
+
+.post .post-content .read-more .read-more-link {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 18px !important;
+}
+
+.post .post-content code, .post .post-content pre {
+  font-family: 'PT Mono', monospace !important;
+  font-size: 12px !important;
+}
+
+.post .shortcode-notice p {
+  font-size: 16px !important;
+}
+
+.post .post-footer .post-nav .prev, .post .post-footer .post-nav .next {
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 20px !important;
 }
 
 .footer .copyright {
   margin-bottom: 2.4em !important;
-}
-
-html {
-  font-size: 16px !important;
 }
 
 .post-reward .qr-code .qr-code-image {
