@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Addy</copyright>
-    <lastBuildDate>Sat, 01 Dec 2018 21:34:30 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Dec 2018 13:19:24 +0700</lastBuildDate>
     
 	<atom:link href="https://addy-dclxvi.github.io/tags/ricing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dunst, A Simple And Lightweight Notification Daemon</title>
+      <link>https://addy-dclxvi.github.io/post/dunst/</link>
+      <pubDate>Sun, 02 Dec 2018 13:19:24 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/dunst/</guid>
+      <description>Introduction According to the Dunst website Dunst is a lightweight replacement for the notification daemons provided by most desktop environments. It’s very customizable, isn’t dependent on any toolkits, and therefore fits into those window manager centric setups we all love to customize to perfection.
+When I installed Debian, I start from minimal install. So, I don&amp;rsquo;t have any notification by default. Then I choose dunst. If you already other notification daemon and want to try Dunst, Just simply add Dunst to your autostart.</description>
+    </item>
     
     <item>
       <title>My Way of Configuring Ncmpcpp Music Player</title>
