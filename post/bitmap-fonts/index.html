@@ -62,15 +62,15 @@
 <meta property="og:description" content="Several bitmap fonts I made including iconic bitmap font and guide how to use it" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://addy-dclxvi.github.io/post/bitmap-fonts/" /><meta property="article:published_time" content="2018-12-06T20:56:34&#43;07:00"/>
-<meta property="article:modified_time" content="2018-12-06T20:56:34&#43;07:00"/>
+<meta property="article:modified_time" content="2018-12-10T19:25:34&#43;07:00"/>
 
 <meta itemprop="name" content="Several Bitmap Fonts I Made">
 <meta itemprop="description" content="Several bitmap fonts I made including iconic bitmap font and guide how to use it">
 
 
 <meta itemprop="datePublished" content="2018-12-06T20:56:34&#43;07:00" />
-<meta itemprop="dateModified" content="2018-12-06T20:56:34&#43;07:00" />
-<meta itemprop="wordCount" content="2104">
+<meta itemprop="dateModified" content="2018-12-10T19:25:34&#43;07:00" />
+<meta itemprop="wordCount" content="2121">
 
 
 
@@ -310,7 +310,7 @@ if (!doNotTrack) {
             <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 2104 words </span>
+        <span class="more-meta"> 2121 words </span>
           <span class="more-meta"> 10 min read </span>
 
         
@@ -364,13 +364,13 @@ if (!doNotTrack) {
 
 <p>This is a post about my selfmade bitmap fonts. I made several bitmap fonts including one
 iconic bitmap font, suitable for statusbar. At first I made them because I can&rsquo;t find any
-bitmap font that suitable for my personal prefernces.</p>
+bitmap font that suitable for my personal preferences.</p>
 
 <ul>
-<li>I want a small bitmap font that can fit in 6x10 bounding box, but placed in 6x12 bounding
+<li>I want a small bitmap font that can fit in 6x10 bounding box, but placed inside 6x12 bounding
 box for extra line spacing. I want extra line spacing for readability reason. I know I can
 add line spacing in URxvt configuration. But I want to use it not only in URxvt.</li>
-<li>Has less curve, to make it looks less pixelated and comfortable for my eyes. But when I find
+<li>Has less curve, to make it looks less pixelated and comfortable for my eyes. But when I find a
 font that has less curve, it usually too boxy.</li>
 <li>Double storey &ldquo;a&rdquo;.</li>
 <li>Slashed zero, I don&rsquo;t want dotted zero.</li>
@@ -389,7 +389,7 @@ font that has less curve, it usually too boxy.</li>
 
 <p>Every bitmap font I tried can&rsquo;t fully satisfy me. It must be something lack. Then I tried
 to install &amp; launch FontForge. But I didn&rsquo;t know what to do with it. So, I tried to open M+
-bitmap font then use it as the base. I kept modifying the characters until it could satisfy me.
+bitmap font then used it as the base. I kept modifying the characters until it could satisfy me.
 And it was harder than I thought. I needed a lot of trials of modification &amp; use.
 If when I was using it I felt something not right, I launched FontForge again and modify
 something. I kept repeating it until several weeks (I couldn&rsquo;t fix them in one night, I have
@@ -745,14 +745,16 @@ in <strong>~/.fonts/misc/</strong></p>
 </div>
 </div>
 <ul>
-<li>URxvt example</li>
+<li>URxvt example
+(My full URxvt configuration is in <a href="/post/configuring-urxvt">this post</a>)</li>
 </ul>
+
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Xresources" data-lang="Xresources"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
+<pre class="chroma"><code class="language-Xresources" data-lang="Xresources"><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Xresources" data-lang="Xresources">URxvt.font: -*-rissole-*
@@ -761,15 +763,17 @@ URxvt.italicFont: -*-rissole-*
 URxvt.boldItalicfont: -*-rissole-*</code></pre></td></tr></table>
 </div>
 </div>
+
 <ul>
 <li>URxvt example with fallback and style</li>
 </ul>
+
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Xresources" data-lang="Xresources"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
+<pre class="chroma"><code class="language-Xresources" data-lang="Xresources"><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Xresources" data-lang="Xresources">URxvt.font: -*-rissole-*, -*-sundae-*
@@ -778,6 +782,7 @@ URxvt.italicFont: -*-rissole-*, -*-sundae-*
 URxvt.boldItalicfont: -*-pretzel-*</code></pre></td></tr></table>
 </div>
 </div>
+
 <ul>
 <li>Other apps those support XLFD : Lemonbar, Fluxbox Style, i3 if Pango disabled, Dzen2, Conky,
 Spectrbar, dmenu, <em>etc</em> <em>etc</em></li>
@@ -1038,16 +1043,19 @@ is shared with my Void Linux setup.</p>
 <p>Now you can use Rissole font on app that don&rsquo;t support XLFD, for example..</p>
 
 <ul>
-<li>Dunst</li>
+<li>Dunst
+(My full Dunst configuration is in <a href="/post/dunst">this post</a>)</li>
 </ul>
+
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-dunstrc" data-lang="dunstrc"><span class="lnt">1
+<pre class="chroma"><code class="language-dunstrc" data-lang="dunstrc"><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-dunstrc" data-lang="dunstrc">font = rissole 8</code></pre></td></tr></table>
 </div>
 </div>
+
 <ul>
 <li>Openbox</li>
 </ul>
@@ -1193,7 +1201,7 @@ is shared with my Void Linux setup.</p>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Thursday, 6 Dec 2018</span>
+    <span class="item-content">Monday, 10 Dec 2018</span>
   </p>
   
   <p class="copyright-item">
