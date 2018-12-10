@@ -19,7 +19,7 @@
       
       <guid>https://addy-dclxvi.github.io/post/dunst/</guid>
       <description>Introduction According to the Dunst website Dunst is a lightweight replacement for the notification daemons provided by most desktop environments. It’s very customizable, isn’t dependent on any toolkits, and therefore fits into those window manager centric setups we all love to customize to perfection.
-When I installed Debian, I start from minimal install. So, I don&amp;rsquo;t have any notification by default. Then I choose dunst. If you already other notification daemon and want to try Dunst, Just simply add Dunst to your autostart.</description>
+When I installed Debian, I start from minimal install. So, I don&amp;rsquo;t have any notification by default. Then I choose dunst. If you already have other notification daemon and want to try Dunst, Just simply add Dunst to your autostart.</description>
     </item>
     
   </channel>

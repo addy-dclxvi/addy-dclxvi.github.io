@@ -55,6 +55,9 @@ body {
   font-size: 38px !important;
 }
 
+.post .post-toc .post-toc-title {
+  font-size: 1.2em !important;
+}
 .post .post-content .read-more .read-more-link {
   font-family: 'PT Sans Narrow', sans-serif !important;
   font-size: 18px !important;
