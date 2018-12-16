@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Addy</copyright>
-    <lastBuildDate>Thu, 06 Dec 2018 20:56:34 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 10:45:56 +0700</lastBuildDate>
     
 	<atom:link href="https://addy-dclxvi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Fluxbox Configurations</title>
+      <link>https://addy-dclxvi.github.io/post/my-fluxbox/</link>
+      <pubDate>Sun, 16 Dec 2018 10:45:56 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/my-fluxbox/</guid>
+      <description>Intruduction This post is an explanation about my Fluxbox configurations and how to use them. Fluxbox is my second window manager after Openbox. They are pretty similar because both are derived from Blackbox window manager. Some differences between Openbox and Fluxbox are..
+ Fluxbox uses plain text of configuration files instead of XML. Fluxbox comes with a panel called Fluxbox Toolbar. The panel can contain taskbar, workspace indicator, workspace switcher, system tray, and clock.</description>
+    </item>
     
     <item>
       <title>Several Custom Bitmap Fonts</title>

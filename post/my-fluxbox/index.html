@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dunst, A Simple And Lightweight Notification Daemon - Addy&#39;s Blog</title>
+  <title>My Fluxbox Configurations - Addy&#39;s Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,8 +22,8 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Addy" /><meta name="description" content="A guide about how to install and configuring Dunst, the minimal notification" />
-<meta name="keywords" content="linux, ricing, dunst, notification, minimal" />
+<meta name="author" content="Addy" /><meta name="description" content="Explanation of my Fluxbox Configurations and how to use it" />
+<meta name="keywords" content="linux, ricing, fluxbox, guide, configurations" />
 
 
 
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.51" />
 
 
-<link rel="canonical" href="https://addy-dclxvi.github.io/post/dunst/" />
+<link rel="canonical" href="https://addy-dclxvi.github.io/post/my-fluxbox/" />
 
 
 
@@ -58,26 +58,26 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Dunst, A Simple And Lightweight Notification Daemon" />
-<meta property="og:description" content="A guide about how to install and configuring Dunst, the minimal notification" />
+<meta property="og:title" content="My Fluxbox Configurations" />
+<meta property="og:description" content="Explanation of my Fluxbox Configurations and how to use it" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://addy-dclxvi.github.io/post/dunst/" /><meta property="article:published_time" content="2018-12-02T13:19:24&#43;07:00"/>
-<meta property="article:modified_time" content="2018-12-10T13:18:38&#43;07:00"/>
+<meta property="og:url" content="https://addy-dclxvi.github.io/post/my-fluxbox/" /><meta property="article:published_time" content="2018-12-16T10:45:56&#43;07:00"/>
+<meta property="article:modified_time" content="2018-12-16T10:45:56&#43;07:00"/>
 
-<meta itemprop="name" content="Dunst, A Simple And Lightweight Notification Daemon">
-<meta itemprop="description" content="A guide about how to install and configuring Dunst, the minimal notification">
-
-
-<meta itemprop="datePublished" content="2018-12-02T13:19:24&#43;07:00" />
-<meta itemprop="dateModified" content="2018-12-10T13:18:38&#43;07:00" />
-<meta itemprop="wordCount" content="967">
+<meta itemprop="name" content="My Fluxbox Configurations">
+<meta itemprop="description" content="Explanation of my Fluxbox Configurations and how to use it">
 
 
+<meta itemprop="datePublished" content="2018-12-16T10:45:56&#43;07:00" />
+<meta itemprop="dateModified" content="2018-12-16T10:45:56&#43;07:00" />
+<meta itemprop="wordCount" content="1077">
 
-<meta itemprop="keywords" content="linux,ricing,dunst,notification,minimal," />
+
+
+<meta itemprop="keywords" content="linux,ricing,fluxbox," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Dunst, A Simple And Lightweight Notification Daemon"/>
-<meta name="twitter:description" content="A guide about how to install and configuring Dunst, the minimal notification"/>
+<meta name="twitter:title" content="My Fluxbox Configurations"/>
+<meta name="twitter:description" content="Explanation of my Fluxbox Configurations and how to use it"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -300,18 +300,18 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Dunst, A Simple And Lightweight Notification Daemon</h1>
+      <h1 class="post-title">My Fluxbox Configurations</h1>
       
       <div class="post-meta">
-        <time datetime="2018-12-02" class="post-time">
-          Sunday, 2 Dec 2018
+        <time datetime="2018-12-16" class="post-time">
+          Sunday, 16 Dec 2018
         </time>
         <div class="post-category">
             <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 967 words </span>
-          <span class="more-meta"> 5 min read </span>
+        <span class="more-meta"> 1077 words </span>
+          <span class="more-meta"> 6 min read </span>
 
         
         
@@ -328,57 +328,145 @@ if (!doNotTrack) {
     <div class="post-content">
       
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="intruduction">Intruduction</h2>
 
-<p>According to the Dunst website Dunst is a lightweight replacement for the notification daemons
-provided by most desktop environments. It’s very customizable, isn’t dependent on any toolkits,
-and therefore fits into those window manager centric setups we all love to customize to perfection.</p>
+<p>This post is an explanation about my Fluxbox configurations and how to use them. Fluxbox is my second
+window manager after Openbox. They are pretty similar because both are derived from Blackbox window
+manager. Some differences between Openbox and Fluxbox are..</p>
 
-<p>When I installed Debian, I start from minimal install. So, I don&rsquo;t have any notification by
-default. Then I choose Dunst. If you already have other notification daemon and want to try Dunst,
-Just simply add Dunst to your autostart. The default notification daemon should be overriden
-by Dunst.</p>
+<ul>
+<li>Fluxbox uses plain text of configuration files instead of XML.</li>
+<li>Fluxbox comes with a panel called Fluxbox Toolbar. The panel can contain taskbar, workspace
+indicator, workspace switcher, system tray, and clock.</li>
+<li>Fluxbox has an ability to group several window, as known as Tabbed mode.</li>
+<li>Fluxbox has an ability to use XPM icons for window decoration, icons, and background. Openbox only
+supports XBM. XPM is similar with PNG, so it supports transparency &amp; multiple colors.</li>
+<li>Fluxbox doesn&rsquo;t have On Screen Display. So there is no popup window when we do switching window
+using <strong>Alt+Tab</strong>, or switching workspace using <strong>Control+Alt+Left/Right</strong>.</li>
+<li>Fluxbox doesn&rsquo;t support EWMH Strut to set the workspace margins.</li>
+<li>Fluxbox uses sligthly less resources than Openbox in my configurations. But no noticable difference
+in current hardware standards.</li>
+<li>Fluxbox doesn&rsquo;t support smart window placement like in Openbox.</li>
+</ul>
 
 <h2 id="installation">Installation</h2>
 
-<p>Dunst is available in the official Debian repository</p>
+<p>Beside installing Fluxbox, I also install some essential supporting packages</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install dunst libnotify-bin</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install fluxbox dunst suckless-tools compton hsetroot xsettingsd lxappearance scrot</code></pre></td></tr></table>
 </div>
 </div>
-<p>Then try to run it by <code>dunst &amp;</code> command and then <code>disown</code>. Close the terminal. Open a new one,
-then test it by sending a notification message.</p>
+<ul>
+<li>Compton is a compositor to provide some desktop effects like shadow, transparency, fade, and
+transiton.</li>
+<li>Hsetroot is a wallpaper handler. Fluxbox has no wallpaper handler by default. Fluxbox comes with
+<code>fbsetroot</code> &amp; <code>fbsetbg</code> by default. But they are not an actual wallpaper handler. They are just
+wrapper scripts to find any wallpaper handler available and use it as fluxbox wallpaper handler.
+When I install Debian, I start from minimal install. So, I don&rsquo;t have any wallpaper handler that
+support JPG/PNG by default. So, I choose <code>hsetroot</code>.</li>
+<li>Suckless Tools are several utility made by <a href="https://suckless.org">suckless.org</a>, but actually I
+only need <code>dmenu</code>. Unfortunately the package is not splitted, so I need to pull them all.</li>
+<li>Xsettingsd is a simple settings daemon to load fontconfig and some other options. Without this,
+fonts would look rasterized in some applications.</li>
+<li>LXAppearance is used for changing GTK theme icons, fonts, and some other preferences.</li>
+<li>Scrot is a simple screenshot taking app.</li>
+</ul>
+
+<p>Then, get my Fluxbox configurations from <a href="/file/fluxbox.tar.gz">this</a> archive. Extract it to your
+home directory. So, you will get the <strong>.fluxbox</strong> and other directories in your home.
+I use URxvt as default terminal. If you interested, check <a href="/post/configuring-urxvt/">this</a> article.
+I use Dunst as notification daemon. If you interested, check <a href="/post/dunst/">this</a> article.
+I use ncmpcpp as music player. If you interested, check <a href="/post/configuring-ncmpcpp/">this</a> article.
+I use Fish as interactive shell. If you interested, check <a href="/post/fish-shell/">this</a> article.</p>
+
+<h2 id="explanations">Explanations</h2>
+
+<h3 id="fluxbox">~/.fluxbox/</h3>
+
+<p>It&rsquo;s the folder where the fluxbox configurations stored. There is several files &amp; a directory inside
+it.</p>
+
+<ul>
+<li><strong>init</strong> is the main fluxbox configuration. Like, what items displayed in the titlebar, what items
+displayed in the toolbar, where to place the toolbar, how many workspaces we need, and many others.
+The full explanation is available
+<a href="http://fluxbox-wiki.org/category/howtos/en/Editing_the_init_file.html">here</a>.</li>
+<li><strong>keys</strong> is the file to set the keybinds &amp; mousebinds. The full explanation is available
+<a href="http://fluxbox-wiki.org/category/howtos/en/Keyboard_shortcuts.html">here</a>.</li>
+<li><strong>menu</strong> is the list of items displayed when we do right click on the desktop. The full explanation
+is available
+<a href="http://fluxbox-wiki.org/category/howtos/en/Editing_the_menu.html">here</a>.</li>
+<li><strong>startup</strong> is a list of programs launched when we login with Fluxbox.</li>
+<li><strong>wallpaper.jpg</strong> is the wallpaper I use. Actually not mandatory to be put in
+~/.fluxbox/wallpaper.jpg</li>
+<li><strong>windowmenu</strong> is the list of items displayed when we do right click on the titlebar.</li>
+<li><strong>styles/</strong> is a directory to place Fluxbox styles/themes. I include one theme in the archive.</li>
+</ul>
+
+<h3 id="config">~/.config/</h3>
+
+<p>I just include one file in the archive. A compton configuration.</p>
+
+<h3 id="scripts">~/.scripts/</h3>
+
+<p>I put three files in the archive. They are just wrapper scripts.</p>
+
+<ul>
+<li><strong>launch2</strong> is a wrapper script to launch dmenu with custom arguments.</li>
+<li><strong>pulsevol</strong> is a script I stole from <a href="https://github.com/okitavera">Vera&rsquo;s</a> dotfiles to make me
+easier to control the pulseaudio volume.</li>
+<li><strong>screeny</strong> is a wrapper script for taking screenshot using scrot then open the result instantly
+using the default image viewer.</li>
+</ul>
+
+<h2 id="launch">Launch</h2>
+
+<p>Logout then login again with Fluxbox session in your login manager. And welcome to Fluxbox.</p>
+
+<h2 id="keybinds">Keybinds</h2>
+
+<ul>
+<li><strong>Super + Enter</strong> launch URxvt</li>
+<li><strong>Super + D</strong> launch dmenu with wrapper script</li>
+<li><strong>Alt + Space</strong> open root menu, just like right click on the desktop. But we can use it anywhere</li>
+<li><strong>Alt + Tab</strong> switch to next window</li>
+<li><strong>Alt + Shift + Tab</strong> switch to previous window</li>
+<li><strong>Control + Alt + Left/Right</strong> switch to previous/next workspace</li>
+<li><strong>Control + Alt + Up/Down</strong>  switch to previous/next window, just like Alt + Tab</li>
+<li><strong>Super + Arrows</strong> &ldquo;Aero Snap&rdquo;</li>
+<li><strong>Super + 1-4</strong> switch to workspace 1-4</li>
+<li><strong>Super + Shift + 1-4</strong> take the current active window to workspace 1-4</li>
+<li><strong>Super + Shift + Left/Right</strong> take the current active window to prev/next workspace</li>
+<li><strong>Super + Alt + Arrows</strong> switch focus to other window in the desired direction</li>
+<li><strong>Super + Control + Arrows</strong> teleport</li>
+<li><strong>Super + A</strong> central the current focus window</li>
+<li><strong>Super + C</strong> close</li>
+<li><strong>Super + Z</strong> minimize</li>
+<li><strong>Super + F</strong> maximize</li>
+<li><strong>Super + T</strong> toggle the window decoration</li>
+<li><strong>Super + U</strong> roll up the window</li>
+<li><strong>Super + Shift + Backspace</strong> reload Fluxbox, do this after modify the configuration files</li>
+<li><strong>Control + Drag</strong> Tab the windows</li>
+<li><strong>Double Click Titlebar</strong> roll up the window</li>
+<li>..More keybinds just read the <em>~/.fluxbox/keys/</em> file</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>Please inspect the code before use.</li>
+<li>These configurations are designed for my daily driver, probably not suitable for you.
+So, please modify them.</li>
+
+<li><p>If you want to use network manager applet, volume applet, clipboard applet, etc, on the system
+tray. Just put them in the autostart. Maybe like this..</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">notify-send <span class="s2">&#34;Notification Title&#34;</span> <span class="s2">&#34;Notification Messages&#34;</span></code></pre></td></tr></table>
-</div>
-</div>
-
-<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
-<div class="box">
-<figure  itemprop="associatedMedia"
-  itemscope itemtype="http://schema.org/ImageObject" >
-    <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunsttest.png" />
-    </div>
-    <a href="https://u.cubeupload.com/addy15/dunsttest.png" itemprop="contentUrl"></a>
-  </figure>
-</div>
-
-
-<p>Of course the default look doesn&rsquo;t look like that. It needs to be configured first.
-Here is my configurations. It&rsquo;s placed in <strong>~./config/dunst/dunstrc</strong></p>
-
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt"> 1
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -388,280 +476,49 @@ Here is my configurations. It&rsquo;s placed in <strong>~./config/dunst/dunstrc<
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">[global]
-monitor = 0
-follow = mouse
-geometry = &#34;300x60-20+48&#34;
-indicate_hidden = yes
-shrink = no
-separator_height = 0
-padding = 32
-horizontal_padding = 32
-frame_width = 2
-sort = no
-idle_threshold = 120
-font = rissole 8
-line_height = 4
-markup = full
-format = %s\n%b
-alignment = left
-show_age_threshold = 60
-word_wrap = yes
-ignore_newline = no
-stack_duplicates = false
-hide_duplicate_count = yes
-show_indicators = no
-icon_position = off
-sticky_history = yes
-history_length = 20
-browser = /usr/bin/firefox -new-tab
-always_run_script = true
-title = Dunst
-class = Dunst
-
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period
-
-[urgency_low]
-timeout = 4
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#8bc34a&#34;
-
-[urgency_normal]
-timeout = 8
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#ba68c8&#34;
-
-[urgency_critical]
-timeout = 0
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#ff7043&#34;</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">:</span><span class="nv">$HOME</span><span class="s2">/.scripts&#34;</span>
+xset fp+ ~/.fonts/misc
+xrdb ~/.Xresources
+compton -b
+hsetroot -fill ~/.fluxbox/wallpaper.jpg
+nm-applet <span class="p">&amp;</span>
+volumeicon <span class="p">&amp;</span>
+clipit <span class="p">&amp;</span>
+<span class="nb">exec</span> fluxbox -no-slit</code></pre></td></tr></table>
 </div>
 </div>
+<p>Don&rsquo;t forget that the ampersand is important, because they are daemons. Also don&rsquo;t forget,
+<code>exec fluxbox</code> have to be in the last line.</p></li>
 
-<p>Geometry is the size of the notification. 300x60-20+48 means, my notification box has 300px width
-&amp; 60px height, placed on the right-top of the screen with 20px margin from the right &amp; 48px margin
-from the top. Negative value in -20 means it&rsquo;s drawed on the right. If you change the value to
-positive, the notification box would be drawed on the left of the screen. The positive value
-in +48 means it&rsquo;s drawed on the top. If you change the value to negative, the notification box
-would be drawed on the bottom of the screen.
-Padding is the margin between the text and the box outline. Frame width is how thick your
-notification box outline. But I use Debian Jessie now, the Dunst version is too old and hasn&rsquo;t
-been supporting frame yet. I will upgrade my Debian Jessie setup to Stretch soon.
-The font I use in the configurations above is custom and I haven&rsquo;t uploaded it yet. So please
-change it with a font you have. <code>format = %s\n%b</code>, %s means summary (the title of the
-notification), and %b means body (the messages of the notification). <code>\n</code> is linebreak,
-without it, your notification messages would be drawed on the right side of the title.
-The format could be improved with markup. For example, make the title bold.</p>
+<li><p>On the tabbed windows, if you click the close button (or Super + C). All of them will be closed.
+To only close one window, right click on the window title then click close.</p></li>
 
-<div class="shortcode-notice note">
-  <div class="shortcode-notice-title note">
-    
-      Update 10 December 2018
-    
-  </div>
-  <p>I have uploaded the fonts and write the description in
-<a href="/post/bitmap-fonts/">this post</a></p>
+<li><p>My included theme is designed to match with Arc GTK Theme.</p></li>
 
-</div>
+<li><p>Don&rsquo;t forget to listen metal musics, I really recommend
+<a href="https://www.youtube.com/playlist?list=PLINesDgSwsOoMyQtly8laF_gZ_k2Qk0Qh">Blackwater Park</a>
+album by Opeth. I&rsquo;m listening to it while writing this article. My favourite track is The
+Drapery Falls.</p></li>
+</ul>
 
 
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">format = &#34;&lt;b&gt;%s&lt;/b&gt;\n%b&#34;</code></pre></td></tr></table>
-</div>
-</div>
-
-<p>I didn&rsquo;t enabled it because my bitmap font doesn&rsquo;t support bold font. Creating bold bitmap
-font in 5px width of character is not very rational.</p>
-
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period</code></pre></td></tr></table>
-</div>
-</div>
-
-<p>One of Dunst selling point is some actions could be controlled using keybind. Like <strong>Ctrl+Space</strong>
-to close the notification popup and <strong>Control+Backtick</strong> to see the previously closed notification.
-Dunst also could draw different outline color for each urgency level. In the configurations above
-I set the low urgency frame to green. The medium urgency frame to blue. And the critical urgency
-to orange. But again, my version of Dunst doesn&rsquo;t support frame.</p>
-
-<h2 id="utilization">Utilization</h2>
-
-<p>Dunst by default handles every notification sent by any applications.
-But we could playing around with custom messages to send. This actually also works on any
-notification daemon, not only Dunst. But it looks even cooler if we did it on Dunst.</p>
-
-<h3 id="showing-time">Showing Time</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Current Time&#34;</span> <span class="o">(</span>date<span class="o">)</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Or with formating</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Current Time&#34;</span> <span class="o">(</span>date +<span class="s2">&#34;%a %-d %b at %H:%M&#34;</span><span class="o">)</span></code></pre></td></tr></table>
-</div>
-</div>
-
-
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
 <figure  itemprop="associatedMedia"
   itemscope itemtype="http://schema.org/ImageObject" >
     <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunsttime.png" />
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/thedrapperyfalls.png" />
     </div>
-    <a href="https://u.cubeupload.com/addy15/dunsttime.png" itemprop="contentUrl"></a>
+    <a href="https://u.cubeupload.com/addy15/thedrapperyfalls.png" itemprop="contentUrl"></a>
   </figure>
 </div>
 
 
-<p>We could add keybind to our DE/WM to call that command. So we could live without statusbar.
-I use Openbox, so maybe like this</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;W-t&#34;</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;command&gt;</span>notify-send &#34;Current Time&#34; (date)<span class="nt">&lt;/command&gt;</span>
-   <span class="nt">&lt;/action&gt;</span>
-<span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>It will send the time info if I hit <strong>Super+T</strong>.</p>
-
-<h3 id="showing-now-playing">Showing Now Playing</h3>
-
-<p>I <a href="/post/configuring-ncmpcpp">use mpd &amp; ncmpcpp</a>, so I could get the music info using <strong>mpc</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Now Playing&#34;</span> <span class="o">(</span>mpc current<span class="o">)</span></code></pre></td></tr></table>
-</div>
-</div>
-
-
-<div class="box">
-<figure  itemprop="associatedMedia"
-  itemscope itemtype="http://schema.org/ImageObject" >
-    <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunstmpc.png" />
-    </div>
-    <a href="https://u.cubeupload.com/addy15/dunstmpc.png" itemprop="contentUrl"></a>
-  </figure>
-</div>
-
-
-<p>Do you know? Ncmpcpp support <em>execute a command on song change</em> in its configurations.
-So, we could make ncmpcpp send a notification on song change. Just try it.
-I&rsquo;m still on Jessie, and again, the ncmpcpp version on Debian Jessie is too old
-and doesn&rsquo;t support that command. So, I couldn&rsquo;t give an example.
-Maybe the code is like this. Hopefully it works.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-ncmpcpp" data-lang="ncmpcpp"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-ncmpcpp" data-lang="ncmpcpp">execute_on_song_change = notify-send &#34;Now Playing ♫&#34; (mpc current)</code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="any-many-other-possibilities">Any Many Other Possibilities</h3>
-
-<p>You just need to use your imagination to unleash your creativity.</p>
-
-<div class="shortcode-notice info">
-  <div class="shortcode-notice-title info">
-    
-      info
-    
-  </div>
-  <p>I <a href="/post/fish-shell">use fish</a>, so the subtitution command is <code>(command)</code>.
-If you&rsquo;re using bash or any POSIX compliance shell, the subtitution command is <code>$(command)</code></p>
-
-</div>
-
+<p>I usually use Firefox web browser. Just discovered Palemoon several days ago and love it. It&rsquo;s
+lighter than Firefox. Suitable for my low powered hardware.</p>
 
 <p>And as always, thanks for reading!</p>
 
@@ -676,7 +533,7 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Monday, 10 Dec 2018</span>
+    <span class="item-content">Sunday, 16 Dec 2018</span>
   </p>
   
   <p class="copyright-item">
@@ -707,31 +564,16 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
       <div class="post-tags">
           <a href="https://addy-dclxvi.github.io/tags/linux/">linux</a>
           <a href="https://addy-dclxvi.github.io/tags/ricing/">ricing</a>
-          <a href="https://addy-dclxvi.github.io/tags/dunst/">dunst</a>
-          <a href="https://addy-dclxvi.github.io/tags/notification/">notification</a>
-          <a href="https://addy-dclxvi.github.io/tags/minimal/">minimal</a>
+          <a href="https://addy-dclxvi.github.io/tags/fluxbox/">fluxbox</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/bitmap-fonts/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Several Custom Bitmap Fonts</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/post/configuring-ncmpcpp/">
-            <span class="next-text nav-default">My Way of Configuring Ncmpcpp Music Player</span>
+          <a class="next" href="/post/bitmap-fonts/">
+            <span class="next-text nav-default">Several Custom Bitmap Fonts</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
@@ -767,7 +609,7 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://addy-dclxvi.github.io/post/dunst/";
+      this.page.url = "https://addy-dclxvi.github.io/post/my-fluxbox/";
     };
     function load_disqus() {
       

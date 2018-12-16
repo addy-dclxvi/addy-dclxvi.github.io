@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fluxbox on Addy&#39;s Blog</title>
+    <link>https://addy-dclxvi.github.io/tags/fluxbox/</link>
+    <description>Recent content in Fluxbox on Addy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Addy</copyright>
+    <lastBuildDate>Sun, 16 Dec 2018 10:45:56 +0700</lastBuildDate>
+    
+	<atom:link href="https://addy-dclxvi.github.io/tags/fluxbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Fluxbox Configurations</title>
+      <link>https://addy-dclxvi.github.io/post/my-fluxbox/</link>
+      <pubDate>Sun, 16 Dec 2018 10:45:56 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/my-fluxbox/</guid>
+      <description>Intruduction This post is an explanation about my Fluxbox configurations and how to use them. Fluxbox is my second window manager after Openbox. They are pretty similar because both are derived from Blackbox window manager. Some differences between Openbox and Fluxbox are..
+ Fluxbox uses plain text of configuration files instead of XML. Fluxbox comes with a panel called Fluxbox Toolbar. The panel can contain taskbar, workspace indicator, workspace switcher, system tray, and clock.</description>
+    </item>
+    
+  </channel>
+</rss>
