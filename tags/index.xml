@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Addy</copyright>
-    <lastBuildDate>Tue, 27 Nov 2018 18:44:21 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 19 Dec 2018 17:18:27 +0700</lastBuildDate>
     
 	<atom:link href="https://addy-dclxvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Conky</title>
+      <link>https://addy-dclxvi.github.io/tags/conky/</link>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/conky/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Debian</title>
@@ -49,9 +58,18 @@
     </item>
     
     <item>
+      <title>Lemonbar</title>
+      <link>https://addy-dclxvi.github.io/tags/lemonbar/</link>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/lemonbar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://addy-dclxvi.github.io/tags/linux/</link>
-      <pubDate>Sun, 16 Dec 2018 10:45:56 +0700</pubDate>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/tags/linux/</guid>
       <description></description>
@@ -121,6 +139,15 @@
     </item>
     
     <item>
+      <title>Panel</title>
+      <link>https://addy-dclxvi.github.io/tags/panel/</link>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/tags/panel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Profile</title>
       <link>https://addy-dclxvi.github.io/tags/profile/</link>
       <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
@@ -132,7 +159,7 @@
     <item>
       <title>Ricing</title>
       <link>https://addy-dclxvi.github.io/tags/ricing/</link>
-      <pubDate>Sun, 16 Dec 2018 10:45:56 +0700</pubDate>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/tags/ricing/</guid>
       <description></description>

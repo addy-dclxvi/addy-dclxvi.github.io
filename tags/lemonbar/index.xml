@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lemonbar on Addy&#39;s Blog</title>
+    <link>https://addy-dclxvi.github.io/tags/lemonbar/</link>
+    <description>Recent content in Lemonbar on Addy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Addy</copyright>
+    <lastBuildDate>Wed, 19 Dec 2018 17:18:27 +0700</lastBuildDate>
+    
+	<atom:link href="https://addy-dclxvi.github.io/tags/lemonbar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Conky to Generate Lemonbar Statusline</title>
+      <link>https://addy-dclxvi.github.io/post/lemonbar-conky/</link>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/lemonbar-conky/</guid>
+      <description>Introduction According to its GitHub page, Lemonbar (formerly known as bar) is a lightweight bar entirely based on XCB. Provides full UTF-8 support, basic formatting, RandR and Xinerama support and EWMH compliance without wasting your precious memory. I use Debian, and Lemonbar is available in Debian repository since Stretch, so just install it normally.
+1  sudo apt-get install lemonbar   It just a bar. It doesn&amp;rsquo;t come with any module like in Polybar by default.</description>
+    </item>
+    
+  </channel>
+</rss>

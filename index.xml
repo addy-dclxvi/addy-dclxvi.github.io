@@ -26,13 +26,25 @@ My favourite band is Dream Theater. Favourite GNU/Linux distro, Debian. Favourit
     </item>
     
     <item>
+      <title>Using Conky to Generate Lemonbar Statusline</title>
+      <link>https://addy-dclxvi.github.io/post/lemonbar-conky/</link>
+      <pubDate>Wed, 19 Dec 2018 17:18:27 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/lemonbar-conky/</guid>
+      
+        <description>Introduction According to its GitHub page, Lemonbar (formerly known as bar) is a lightweight bar entirely based on XCB. Provides full UTF-8 support, basic formatting, RandR and Xinerama support and EWMH compliance without wasting your precious memory. I use Debian, and Lemonbar is available in Debian repository since Stretch, so just install it normally.
+1  sudo apt-get install lemonbar   It just a bar. It doesn&amp;rsquo;t come with any module like in Polybar by default.</description>
+      
+    </item>
+    
+    <item>
       <title>My Fluxbox Configurations</title>
       <link>https://addy-dclxvi.github.io/post/my-fluxbox/</link>
       <pubDate>Sun, 16 Dec 2018 10:45:56 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/my-fluxbox/</guid>
       
-        <description>Intruduction This post is an explanation about my Fluxbox configurations and how to use them. Fluxbox is my second window manager after Openbox. They are pretty similar because both are derived from Blackbox window manager. Some differences between Openbox and Fluxbox are..
+        <description>Introduction This post is an explanation about my Fluxbox configurations and how to use them. Fluxbox is my second window manager after Openbox. They are pretty similar because both are derived from Blackbox window manager. Some differences between Openbox and Fluxbox are..
  Fluxbox uses plain text of configuration files instead of XML. Fluxbox comes with a panel called Fluxbox Toolbar. The panel can contain taskbar, workspace indicator, workspace switcher, system tray, and clock.</description>
       
     </item>

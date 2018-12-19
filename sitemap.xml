@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/post/lemonbar-conky/</loc>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/post/my-fluxbox/</loc>
     <lastmod>2018-12-16T10:45:56+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -72,6 +79,13 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/tags/conky/</loc>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/tags/debian/</loc>
     <lastmod>2018-11-27T18:44:21+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -100,15 +114,22 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/tags/lemonbar/</loc>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
-    <lastmod>2018-12-16T10:45:56+07:00</lastmod>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
-    <lastmod>2018-12-16T10:45:56+07:00</lastmod>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -163,8 +184,15 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/tags/panel/</loc>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/post/</loc>
-    <lastmod>2018-12-16T10:45:56+07:00</lastmod>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -178,7 +206,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/ricing/</loc>
-    <lastmod>2018-12-16T10:45:56+07:00</lastmod>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -192,7 +220,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/</loc>
-    <lastmod>2018-11-27T18:44:21+07:00</lastmod>
+    <lastmod>2018-12-19T17:18:27+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
