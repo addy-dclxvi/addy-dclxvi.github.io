@@ -77,7 +77,7 @@ info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</descripti
       <pubDate>Fri, 30 Nov 2018 18:16:14 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/fish-shell/</guid>
-      <description>Introduction Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. Some of my favourite features of fish are..
+      <description>Introduction Most of GNU/Linux distros use bash as the default terminal shell. But there are many aftermarket alternatives of cli shell for it. And my favourite is fish, the friendly interactive shell. Some of my favourite features of fish are:
  Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options.</description>
     </item>
     
@@ -87,7 +87,7 @@ info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</descripti
       <pubDate>Tue, 27 Nov 2018 18:44:21 +0700</pubDate>
       
       <guid>https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/</guid>
-      <description>Introduction With regard to Openbox Menus, there are two types: static menus and dynamic menus. Dynamic menus also well known as pipe menu. In this article, I will explain how to use pipe menu to generate applications list easily. Because, writing our applications list manually to menu.xml will be exhausting. I use Debian by the way. So some command line in this article, like how to install packages, will use Debian way.</description>
+      <description>Introduction With regard to Openbox Menus, there are two types: static menus and dynamic menus. Dynamic menus are also known as pipe menu. In this article, I will explain how to use pipe menu to generate applications list easily. Because, writing our applications list manually to menu.xml will be exhausting. I use Debian by the way. So some command line in this article, like how to install packages, will use Debian way.</description>
     </item>
     
   </channel>

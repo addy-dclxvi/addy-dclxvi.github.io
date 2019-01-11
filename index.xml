@@ -19,9 +19,20 @@
       
       <guid>https://addy-dclxvi.github.io/about/</guid>
       
-        <description>Introduction Hi! I&amp;rsquo;m Addy
-Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, playing guitar, design, customizing desktop, more metal, reading, climbing mountain, fishing, watching movie, anime, and even more metal.
-My favourite band is Dream Theater. Favourite GNU/Linux distro, Debian. Favourite movie director, Christopher Nolan. Favourite book, A Study in Scarlet. Favourite anime, Fullmetal Alchemist. Favourite album, Metropolis Part 2 : Scenes from a Memory.</description>
+        <description>Introduction Hi! I&amp;rsquo;m Addy!
+Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, playing guitar, design, customizing desktop, more metal, reading, climbing mountain, fishing, watching movie, anime, and even more metal. I write articles in this blog when I have some freetime and not lazy. I write some knowledges I have about Linux, and probably I will also expand the theme of this blog with my adventures in my life.</description>
+      
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://addy-dclxvi.github.io/privacy/</link>
+      <pubDate>Wed, 02 Jan 2019 20:11:40 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/privacy/</guid>
+      
+        <description>Summary Addy&amp;rsquo;s Blog (&amp;ldquo;us&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) operates the https://addy-dclxvi.github.io website (hereinafter referred to as the &amp;ldquo;Service&amp;rdquo;). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. Our Privacy Policy for Addy&amp;rsquo;s Blog is based on the Privacy Policy Template from Privacy Policies.
+We use your data to provide and improve the Service.</description>
       
     </item>
     
@@ -103,7 +114,7 @@ info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</descripti
       
       <guid>https://addy-dclxvi.github.io/post/fish-shell/</guid>
       
-        <description>Introduction Most of GNU/Linux distros use bash as the default shell. But there are many aftermarket alternative of cli shell for it. And my favourite is fish, the friendly interactive shell. Some of my favourite features of fish are..
+        <description>Introduction Most of GNU/Linux distros use bash as the default terminal shell. But there are many aftermarket alternatives of cli shell for it. And my favourite is fish, the friendly interactive shell. Some of my favourite features of fish are:
  Command suggestion, usually based on history. Hit right arrow or Ctrl+F to complete it.      Tab autocompletion, type several letter then hit Tab several times to see the options.</description>
       
     </item>
@@ -115,7 +126,7 @@ info  Don&amp;rsquo;t forget that ncmpcpp is a terminal applications.</descripti
       
       <guid>https://addy-dclxvi.github.io/post/autogenerate-openbox-menu/</guid>
       
-        <description>Introduction With regard to Openbox Menus, there are two types: static menus and dynamic menus. Dynamic menus also well known as pipe menu. In this article, I will explain how to use pipe menu to generate applications list easily. Because, writing our applications list manually to menu.xml will be exhausting. I use Debian by the way. So some command line in this article, like how to install packages, will use Debian way.</description>
+        <description>Introduction With regard to Openbox Menus, there are two types: static menus and dynamic menus. Dynamic menus are also known as pipe menu. In this article, I will explain how to use pipe menu to generate applications list easily. Because, writing our applications list manually to menu.xml will be exhausting. I use Debian by the way. So some command line in this article, like how to install packages, will use Debian way.</description>
       
     </item>
     
