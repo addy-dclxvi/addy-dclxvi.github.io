@@ -25,6 +25,18 @@ Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, play
     </item>
     
     <item>
+      <title>Scrot, A Simple Screenshot Taking App</title>
+      <link>https://addy-dclxvi.github.io/post/scrot/</link>
+      <pubDate>Tue, 15 Jan 2019 19:44:16 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/scrot/</guid>
+      
+        <description>Introduction According to Wikipedia, Scrot is a minimalistic command line screen capturing application. It allows substantial degree of flexibility by specifying parameters on command line, including the ability to invoke a third-party utility to manipulate the resulting screenshot.
+When I installed Debian, I started from minimal install. So it didn&amp;rsquo;t come with any screenshot taking app by default, then I installed scrot. I just thought that scrot was quite enough for my necessity.</description>
+      
+    </item>
+    
+    <item>
       <title>Privacy Policy</title>
       <link>https://addy-dclxvi.github.io/privacy/</link>
       <pubDate>Wed, 02 Jan 2019 20:11:40 +0700</pubDate>

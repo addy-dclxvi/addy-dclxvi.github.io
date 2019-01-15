@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scrot, A Simple Screenshot Taking App - Addy&#39;s Blog</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Addy" /><meta name="description" content="A guide how to install, use, and utilize  scrot, a simple screenshot taking app" />
+<meta name="keywords" content="linux, ricing, scrot, screenshot" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.51" />
+
+
+<link rel="canonical" href="https://addy-dclxvi.github.io/post/scrot/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.aaf3394fc81ccb6f6fe3fe458d1f5b61c39f151e44df83baaf1d7b3775a8b98d.css" integrity="sha256-qvM5T8gcy29v4/5FjR9bYcOfFR5E34O6rx17N3WouY0=" media="screen">
+
+
+
+
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Scrot, A Simple Screenshot Taking App" />
+<meta property="og:description" content="A guide how to install, use, and utilize  scrot, a simple screenshot taking app" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://addy-dclxvi.github.io/post/scrot/" /><meta property="article:published_time" content="2019-01-15T19:44:16&#43;07:00"/>
+<meta property="article:modified_time" content="2019-01-15T19:44:16&#43;07:00"/>
+
+<meta itemprop="name" content="Scrot, A Simple Screenshot Taking App">
+<meta itemprop="description" content="A guide how to install, use, and utilize  scrot, a simple screenshot taking app">
+
+
+<meta itemprop="datePublished" content="2019-01-15T19:44:16&#43;07:00" />
+<meta itemprop="dateModified" content="2019-01-15T19:44:16&#43;07:00" />
+<meta itemprop="wordCount" content="758">
+
+
+
+<meta itemprop="keywords" content="linux,ricing," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scrot, A Simple Screenshot Taking App"/>
+<meta name="twitter:description" content="A guide how to install, use, and utilize  scrot, a simple screenshot taking app"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-130181389-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-6181431244839964",
+enable_page_level_ads: true
+});
+</script>
+
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Addy&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/index.html">Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/categories/">Categories</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/about/">About</a>
+          
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Addy's Blog
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/index.html">Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://addy-dclxvi.github.io/about/">About</a>
+          
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Scrot, A Simple Screenshot Taking App</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-01-15" class="post-time">
+          Tuesday, 15 Jan 2019
+        </time>
+        <div class="post-category">
+            <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
+            
+          </div>
+        <span class="more-meta"> 758 words </span>
+          <span class="more-meta"> 4 min read </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h2 id="introduction">Introduction</h2>
+
+<p>According to Wikipedia, Scrot is a minimalistic command line screen capturing application. It
+allows substantial degree of flexibility by specifying parameters on command line, including the
+ability to invoke a third-party utility to manipulate the resulting screenshot.</p>
+
+<p>When I installed Debian, I started from minimal install. So it didn&rsquo;t come with any screenshot
+taking app by default, then I installed scrot. I just thought that scrot was quite enough for my
+necessity.</p>
+
+<p>Scrot is a CLI app, it doesn&rsquo;t come with a GUI like Gnome Screenshoter or Xfce Screenshoter.
+To take a screenshot, you only need to execute <code>scrot</code> from terminal. But, common way to use scrot
+is by creating a keybind executing scrot.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Scrot is available in most distro repository. I use Debian, so I use <strong>apt</strong> to install it.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install scrot</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="run">Run</h2>
+
+<p>You can test taking a screenshot by using <code>scrot</code> command in terminal. The image will be saved in
+your home. And the file name will contains the date &amp; time of when the screenshot was taken.</p>
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box">
+<figure  itemprop="associatedMedia"
+  itemscope itemtype="http://schema.org/ImageObject" >
+    <div class="img">
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/scrot.png" />
+    </div>
+    <a href="https://u.cubeupload.com/addy15/scrot.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<p>Then try to create a keybind to make <strong>PrtScreen</strong> button executes <code>scrot</code>. I personally use
+Openbox. So, I edit my <strong>rc.xml</strong> to add keybind. Well, actually more than this. I will explain
+them in the next paragraph.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML"><span class="lnt">462
+</span><span class="lnt">463
+</span><span class="lnt">464
+</span><span class="lnt">465
+</span><span class="lnt">466
+</span><span class="lnt">467
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML">        <span class="c">&lt;!-- Take a screenshot, say &#34;Cheeeese!&#34; --&gt;</span>
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;Print&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>scrot<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h2 id="more-tricks">More Tricks</h2>
+
+<h3 id="preparations">Preparations</h3>
+
+<p>Instead of executing <code>scrot</code>. I set my keybind to execute a script named <code>screeny</code>.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Bash" data-lang="Bash"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Bash" data-lang="Bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="c1"># A simple script to take screenshoot using scrot</span>
+<span class="c1"># Then add date to the file name</span>
+<span class="c1"># Then open the result instantly using default image viewer</span>
+<span class="c1"># Need xdg-utils, mostly preinstalled</span>
+<span class="c1"># Cheers! Addy</span>
+
+<span class="c1"># &#39;screeny -f&#39; to take a screenshot for current focused window only</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$1</span> <span class="o">=</span> <span class="s2">&#34;-f&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    scrot <span class="s1">&#39;Cheese_%y.%m.%-d_%H.%M.%S.png&#39;</span> --focused --border <span class="se">\
+</span><span class="se"></span>    -e <span class="s1">&#39;mv $f ~/Pictures; xdg-open ~/Pictures/$f&#39;</span>
+
+<span class="c1"># &#39;screeny -s&#39; to take a screenshot with selection by dragging a rectangle</span>
+<span class="k">elif</span> <span class="o">[[</span> <span class="nv">$1</span> <span class="o">=</span> <span class="s2">&#34;-s&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    scrot <span class="s1">&#39;Cheese_%y.%m.%-d_%H.%M.%S.png&#39;</span> --select <span class="se">\
+</span><span class="se"></span>    -e <span class="s1">&#39;mv $f ~/Pictures; xdg-open ~/Pictures/$f&#39;</span>
+
+<span class="c1"># &#39;screeny&#39; only to take a screenshoot normally</span>
+<span class="k">else</span>
+    scrot <span class="s1">&#39;Cheese_%y.%m.%-d_%H.%M.%S.png&#39;</span> <span class="se">\
+</span><span class="se"></span>    -e <span class="s1">&#39;mv $f ~/Pictures; xdg-open ~/Pictures/$f&#39;</span>
+<span class="k">fi</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<div class="shortcode-notice info">
+  <div class="shortcode-notice-title info">
+    
+      info
+    
+  </div>
+  <p>I&rsquo;m not a programmer.</p>
+
+</div>
+
+
+<p>I put that <code>screeny</code> script in <strong>~/.scripts</strong> folder, along with my other custom scripts. Then I
+export that folder to my <code>$PATH</code> using Openbox autostart file, so I can execute screeny command
+only by typing <code>screeny</code>, instead of <code>~/.scripts/screeny</code>. Here is the example of my
+<strong>~/.config/openbox/autostart</strong> file.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Bash" data-lang="Bash"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Bash" data-lang="Bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">:</span><span class="nv">$HOME</span><span class="s2">/.scripts&#34;</span>
+compton -b
+xbacklight -set <span class="m">10</span>
+hsetroot -center ~/.wallpaper.jpg
+xset +fp ~/.fonts/misc/
+urxvtd -q <span class="p">&amp;</span>
+xsettingsd <span class="p">&amp;</span>
+conky <span class="p">|</span> lemonbar -g x28 <span class="se">\
+</span><span class="se"></span>-f -*-rissole-* -f -*-waffle-* <span class="se">\
+</span><span class="se"></span>-B <span class="s2">&#34;#141c21&#34;</span> -F <span class="s2">&#34;#93a1a1&#34;</span> <span class="p">&amp;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="show-the-result-of-the-screenshot-instantly">Show The Result of The Screenshot Instantly</h3>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML"><span class="lnt">462
+</span><span class="lnt">463
+</span><span class="lnt">464
+</span><span class="lnt">465
+</span><span class="lnt">466
+</span><span class="lnt">467
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML">        <span class="c">&lt;!-- Take a screenshot, say &#34;Cheeeese!&#34; --&gt;</span> 
+        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;Print&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>screeny<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>When I take a screenshoot, it will rename the file to <strong>Cheese_&lt;date&gt;-&lt;time&gt;</strong>. Then move it to
+<strong>~/Pictures</strong> folder. Then open the screenshot using default image viewer. So, I could delete it
+immediately using <strong>Del</strong> button in my keyboard if I was not satisfy with the result. By the way,
+my default image viewer is <strong>Viewnior</strong>.</p>
+
+
+
+<div class="box">
+<figure  itemprop="associatedMedia"
+  itemscope itemtype="http://schema.org/ImageObject" >
+    <div class="img">
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/screeny.png" />
+    </div>
+    <a href="https://u.cubeupload.com/addy15/screeny.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<div class="shortcode-notice info">
+  <div class="shortcode-notice-title info">
+    
+      info
+    
+  </div>
+  <p>I use <code>xdg-open</code> to determine the default image viewer. If you don&rsquo;t have <code>xdg-open</code>, just replace
+<code>xdg-open</code> in the screeny script with your image viewer name. And If Your languange is not English,
+replace <code>~/Pictures</code> in the script with your own languange of &ldquo;Pictures&rdquo;.</p>
+
+</div>
+
+
+<h3 id="take-a-screenshot-of-current-focused-window-only">Take A Screenshot of Current Focused Window Only</h3>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML"><span class="lnt">468
+</span><span class="lnt">469
+</span><span class="lnt">470
+</span><span class="lnt">471
+</span><span class="lnt">472
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML">        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;A-Print&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>screeny -f<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Hit <strong>Alt+PrtSCreen</strong> to take the screenshot of current active window only. The script then
+will rename it. Then move it to <strong>~/Pictures</strong> folder. Then open the screenshot using default image
+viewer. Taking the focused window only is pretty handy for asking support in the forum. I only need
+to show the necesarry part of the issue I get.</p>
+
+<h3 id="take-a-screenshoot-in-custom-area">Take A Screenshoot in Custom Area</h3>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML"><span class="lnt">473
+</span><span class="lnt">474
+</span><span class="lnt">475
+</span><span class="lnt">476
+</span><span class="lnt">477
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-XML" data-lang="XML">        <span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;C-Print&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;command&gt;</span>screeny -s<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Hit <strong>Ctrl+PrtScreen</strong> then draw a rectangle by dragging your mouse. It will take a screenshot in
+the rectangle you draw. The script then will rename it. Then move it to <strong>~/Pictures</strong> folder. Then
+open the screenshot using default image viewer.</p>
+
+<h2 id="thank-you">Thank You</h2>
+
+<p>And as always, thanks for reading!</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Addy</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">Tuesday, 15 Jan 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+	<input type="checkbox" name="reward" id="reward" hidden />
+	<label class="reward-button" for="reward">Reward</label>
+	<div class="qr-code">
+		<label class="qr-code-image" for="reward">
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'>
+            </script>
+            <script type='text/javascript'>
+            kofiwidget2.init('Buy Me a Coffee', '#ff5f5f', 'J3J4MFOL');kofiwidget2.draw()
+            </script> 
+		</label>
+	</div>
+</div>
+
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://addy-dclxvi.github.io/tags/linux/">linux</a>
+          <a href="https://addy-dclxvi.github.io/tags/ricing/">ricing</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/lemonbar-conky/">
+            <span class="next-text nav-default">Using Conky to Generate Lemonbar Statusline</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    Show Disqus Comments
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://addy-dclxvi.github.io/post/scrot/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'addy15';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+  </div>
+  
+    
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  
+  
+    <a href="mailto:addy4rock@gmail.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path
+     d="M 702.29043,592.04719 403.05555,316.39902 c 0,-44.34435 31.98003,-46.23235 31.98003,-46.23235 h 181.59429 219.28801 180.04652 c 0,0 31.98,1.888 31.98,46.23235 L 750.25728,592.04719 c 0,0 -3.08902,1.73913 -7.99019,3.39029 v 0.006 c -5.39769,2.28048 -10.87924,3.02486 -15.98678,2.91659 -5.10751,0.10827 -10.58908,-0.63611 -15.98678,-2.91659 v -0.006 c -4.91407,-1.65792 -8.00309,-3.39029 -8.0031,-3.39029 z m 23.98342,61.46492 C 715.34299,653.23468 699.6335,649.07295 681.7314,632.79149 647.46844,601.62931 403.05555,370.32547 403.05555,370.32547 v 345.15911 c 0,0 0,38.34875 37.68731,38.34875 h 269.53776 31.98002 267.99006 c 37.6937,0 37.6937,-38.34875 37.6937,-38.34875 V 370.32547 c 0,0 -242.86512,231.30384 -277.12804,262.46601 -17.90214,16.28147 -33.61163,20.44996 -44.54251,20.72063 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.46109414" />
+</svg>
+
+    </a>
+  
+    <a href="http://github.com/addy-dclxvi" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path
+     d="m 725.50001,189.55556 c -178.15057,0 -322.44446,148.04014 -322.44446,330.63122 0,146.11147 92.38033,270.01552 220.47139,313.68638 16.12223,3.11342 22.03371,-7.10862 22.03371,-15.89784 0,-7.8525 -0.26871,-28.6547 -0.40305,-56.20732 C 555.4643,781.71609 536.54755,717.40832 536.54755,717.40832 521.87633,679.24797 500.6756,669.0535 500.6756,669.0535 c -29.20809,-20.49913 2.25711,-20.08585 2.25711,-20.08585 32.3788,2.31442 49.38776,34.05503 49.38776,34.05503 28.75127,50.55902 75.47886,35.95614 93.91193,27.49749 2.90201,-21.38083 11.20494,-35.95614 20.42148,-44.22192 -71.60953,-8.26579 -146.87344,-36.70007 -146.87344,-163.38693 0,-36.09392 12.49471,-65.57521 33.1849,-88.71938 -3.6275,-8.34844 -14.51001,-41.96263 2.82138,-87.50707 0,0 27.00473,-8.87194 88.67223,33.8897 25.79556,-7.35655 53.20335,-10.99348 80.61113,-11.1588 27.40776,0.16532 54.81554,3.80225 80.61111,11.1588 61.26443,-42.76164 88.26917,-33.8897 88.26917,-33.8897 17.33137,45.54444 6.44887,79.15863 3.22443,87.50707 20.55583,23.14417 33.05055,52.62546 33.05055,88.71938 0,127.0175 -75.37138,154.98337 -147.11527,163.11141 11.28555,9.91891 21.765,30.19763 21.765,61.16676 0,44.24948 -0.40307,79.79235 -0.40307,90.53786 0,8.67897 5.64281,19.01126 22.16808,15.70499 129.00463,-43.3678 221.30432,-167.35452 221.30432,-313.24556 0,-182.59108 -144.37446,-330.63122 -322.4444,-330.63122"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.63771909" />
+</svg>
+
+    </a>
+
+
+<a href="https://addy-dclxvi.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path
+     d="m 675.81724,785.06666 c 0,-239.68427 -197.19964,-436.90667 -436.88391,-436.90667 V 238.93333 c 299.57689,0 546.13333,246.55644 546.13333,546.13333 z M 313.82187,635.22133 a 75.093333,75.093333 0 0 1 74.93404,74.97955 75.1616,75.1616 0 0 1 -75.11609,74.86578 c -41.25582,0 -74.70649,-33.54169 -74.70649,-74.86578 0,-41.32409 33.56445,-74.9568 74.88854,-74.97955 z M 600.95146,785.06666 H 494.7968 c 0,-140.37902 -115.48445,-255.88622 -255.86347,-255.88622 V 423.02577 c 198.58773,0 362.01813,163.47591 362.01813,362.04089 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.53333336" />
+</svg>
+
+  </a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2018 -
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Addy
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ="></script>
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
