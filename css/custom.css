@@ -84,3 +84,10 @@ body {
 .post-reward .qr-code .qr-code-image {
   width:100% !important;
 }
+
+.archive .archive-post .archive-post-time {
+  color: #8a8a8a;
+  display: table-cell;
+  width: 12em;
+  vertical-align: middle;
+}

@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://addy-dclxvi.github.io/post/urxvtd/</loc>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://addy-dclxvi.github.io/post/scrot/</loc>
     <lastmod>2019-01-15T19:44:16+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,14 +143,14 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/linux/</loc>
-    <lastmod>2019-01-15T19:44:16+07:00</lastmod>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://addy-dclxvi.github.io/categories/linux/</loc>
-    <lastmod>2019-01-15T19:44:16+07:00</lastmod>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -206,7 +213,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/post/</loc>
-    <lastmod>2019-01-15T19:44:16+07:00</lastmod>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -220,7 +227,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/ricing/</loc>
-    <lastmod>2019-01-15T19:44:16+07:00</lastmod>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -248,7 +255,7 @@
   
   <url>
     <loc>https://addy-dclxvi.github.io/tags/urxvt/</loc>
-    <lastmod>2018-12-10T18:44:11+07:00</lastmod>
+    <lastmod>2019-01-21T20:28:52+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

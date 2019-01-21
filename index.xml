@@ -25,6 +25,18 @@ Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, play
     </item>
     
     <item>
+      <title>Use URxvt Daemon Mode to Decrease The Resources Usage</title>
+      <link>https://addy-dclxvi.github.io/post/urxvtd/</link>
+      <pubDate>Mon, 21 Jan 2019 20:28:52 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/urxvtd/</guid>
+      
+        <description>Introduction According to the manual page, URxvtd is same with URxvt but runs as a daemon that can open multiple terminal windows within the same process. Advantages of running a urxvt daemon include faster creation time for terminal windows and a lot of saved memory. The disadvantage is a possible impact on stability. If the main program crashes, all processes in the terminal windows are terminated.
+How To Use Start The Daemon From my Urxvt Configurations, nothing needs to be changed.</description>
+      
+    </item>
+    
+    <item>
       <title>Scrot, A Simple Screenshot Taking App</title>
       <link>https://addy-dclxvi.github.io/post/scrot/</link>
       <pubDate>Tue, 15 Jan 2019 19:44:16 +0700</pubDate>
