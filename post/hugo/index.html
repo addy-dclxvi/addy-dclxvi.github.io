@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dunst, A Simple And Lightweight Notification Daemon - Addy&#39;s Blog</title>
+  <title>How I Built This Blog Using Hugo Static Site Generator - Addy&#39;s Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,8 +22,8 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Addy" /><meta name="description" content="A guide about how to install and configuring Dunst, the minimal notification" />
-<meta name="keywords" content="linux, ricing, dunst, notification, minimal, debian, guide" />
+<meta name="author" content="Addy" /><meta name="description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme" />
+<meta name="keywords" content="linux, ricing, blog, website, debian, guide, hugo, ssg, static, site, generator, minimal, simple" />
 
 
 
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.51" />
 
 
-<link rel="canonical" href="https://addy-dclxvi.github.io/post/dunst/" />
+<link rel="canonical" href="https://addy-dclxvi.github.io/post/hugo/" />
 
 
 
@@ -58,26 +58,26 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Dunst, A Simple And Lightweight Notification Daemon" />
-<meta property="og:description" content="A guide about how to install and configuring Dunst, the minimal notification" />
+<meta property="og:title" content="How I Built This Blog Using Hugo Static Site Generator" />
+<meta property="og:description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://addy-dclxvi.github.io/post/dunst/" /><meta property="article:published_time" content="2018-12-02T13:19:24&#43;07:00"/>
-<meta property="article:modified_time" content="2018-12-10T13:18:38&#43;07:00"/>
+<meta property="og:url" content="https://addy-dclxvi.github.io/post/hugo/" /><meta property="article:published_time" content="2019-01-22T18:09:57&#43;07:00"/>
+<meta property="article:modified_time" content="2019-01-22T18:09:57&#43;07:00"/>
 
-<meta itemprop="name" content="Dunst, A Simple And Lightweight Notification Daemon">
-<meta itemprop="description" content="A guide about how to install and configuring Dunst, the minimal notification">
-
-
-<meta itemprop="datePublished" content="2018-12-02T13:19:24&#43;07:00" />
-<meta itemprop="dateModified" content="2018-12-10T13:18:38&#43;07:00" />
-<meta itemprop="wordCount" content="967">
+<meta itemprop="name" content="How I Built This Blog Using Hugo Static Site Generator">
+<meta itemprop="description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme">
 
 
+<meta itemprop="datePublished" content="2019-01-22T18:09:57&#43;07:00" />
+<meta itemprop="dateModified" content="2019-01-22T18:09:57&#43;07:00" />
+<meta itemprop="wordCount" content="769">
 
-<meta itemprop="keywords" content="linux,ricing,dunst,notification,minimal," />
+
+
+<meta itemprop="keywords" content="hugo," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Dunst, A Simple And Lightweight Notification Daemon"/>
-<meta name="twitter:description" content="A guide about how to install and configuring Dunst, the minimal notification"/>
+<meta name="twitter:title" content="How I Built This Blog Using Hugo Static Site Generator"/>
+<meta name="twitter:description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -310,18 +310,18 @@ enable_page_level_ads: true
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Dunst, A Simple And Lightweight Notification Daemon</h1>
+      <h1 class="post-title">How I Built This Blog Using Hugo Static Site Generator</h1>
       
       <div class="post-meta">
-        <time datetime="2018-12-02" class="post-time">
-          Sunday, 2 Dec 2018
+        <time datetime="2019-01-22" class="post-time">
+          Tuesday, 22 Jan 2019
         </time>
         <div class="post-category">
-            <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
+            <a href="https://addy-dclxvi.github.io/categories/blogging/"> Blogging </a>
             
           </div>
-        <span class="more-meta"> 967 words </span>
-          <span class="more-meta"> 5 min read </span>
+        <span class="more-meta"> 769 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -340,338 +340,194 @@ enable_page_level_ads: true
 
 <h2 id="introduction">Introduction</h2>
 
-<p>According to the Dunst website Dunst is a lightweight replacement for the notification daemons
-provided by most desktop environments. It’s very customizable, isn’t dependent on any toolkits,
-and therefore fits into those window manager centric setups we all love to customize to perfection.</p>
+<p>According to its GitHub README, Hugo is a static HTML and CSS website generator written in Go. It
+is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and
+templates and renders them into a full HTML website. Hugo relies on Markdown files with front
+matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and
+other systems where you don’t have a privileged account. Hugo renders a typical website of
+moderate size in a fraction of a second. A good rule of thumb is that each piece of content render
+in around 1 millisecond. Hugo is designed to work well for any kind of website including blogs,
+tumbles, and docs.</p>
 
-<p>When I installed Debian, I start from minimal install. So, I don&rsquo;t have any notification by
-default. Then I choose Dunst. If you already have other notification daemon and want to try Dunst,
-Just simply add Dunst to your autostart. The default notification daemon should be overriden
-by Dunst.</p>
+<p>At first, I didn&rsquo;t even know how to build a static website. People on Dotfiles ID recommended me to
+try to build a website using SSG (Static Site Generator) like Jekyll, Hexo, or Hugo. I didn&rsquo;t have
+programming languange knowledge, so I worried it would be hard. But after seeing a beautiful theme
+list, I felt motivated to try it. After that, I duckduckwent about popular SSG. The big four were</p>
+
+<ol>
+<li>Jekyll</li>
+<li>Hexo</li>
+<li>Gatsby</li>
+<li>Hugo</li>
+</ol>
+
+<p>I was interested with Hugo, simply because it distributed the <strong>*.deb</strong> package. I use Debian, so
+it makes me easier to install it. And even better it doesn&rsquo;t pull any dependency, not even the Go
+compiler. So, it keeps my setup simple. The other SSG are based on things I don&rsquo;t understand, which
+needs to setup a lot thing like node.js, ruby, and other things I don&rsquo;t understand. I don&rsquo;t have a
+time to learn them. So, Hugo is perfect SSG for me. The unintentional advantage, Hugo is really
+fast at building website.</p>
 
 <h2 id="installation">Installation</h2>
 
-<p>Dunst is available in the official Debian repository</p>
+<p>Well, it&rsquo;s actually available on Debian repository since Stretch. But the package version is too
+old. Most of Hugo theme reqires higher version of Hugo. So, I went to its
+<a href="https://github.com/gohugoio/hugo/releases">Release Page</a> on GitHub to get the higher package
+version in <strong>*.deb</strong> format. Installing package outside the repo is actually unrecommended,
+but Hugo doesn&rsquo;t pull any dependencies. So, if something goes wrong, I just need to remove Hugo,
+other packages will not be affected. Fortunately, until now I never had any issue with the
+sideloaded Hugo. After I downloaded it, I installed it using <strong>dpkg</strong>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install dunst libnotify-bin</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> Downloads
+sudo dpkg -i hugo_0.51_Linux-32bit.deb</code></pre></td></tr></table>
 </div>
 </div>
-<p>Then try to run it by <code>dunst &amp;</code> command and then <code>disown</code>. Close the terminal. Open a new one,
-then test it by sending a notification message.</p>
+<h2 id="building-a-website">Building A Website</h2>
+
+<h3 id="creating-two-repositories-on-github">Creating Two Repositories on GitHub</h3>
+
+<p>I hosted my blog on GitHub. So, I made two repositories on GitHub. One to host the generated html.
+I named the repository <strong>addy-dclxvi/addy-dclxvi.github.io</strong>. It had to be
+<strong>&lt;username&gt;.github.io</strong>, to make it instantly accesible from
+<strong>https://&lt;username&gt;.github.io</strong>. And one more to put the source code to keep the spirit of Open
+Source. I simply named the repository <strong>addy-dclxvi/blog</strong>.</p>
+
+<h3 id="cloning-the-empty-repo">Cloning The Empty Repo</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">notify-send <span class="s2">&#34;Notification Title&#34;</span> <span class="s2">&#34;Notification Messages&#34;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># I put it on ~/.blog folder</span>
+git clone https://github.com/addy-dclxvi/blog.git .blog
+<span class="nb">cd</span> .blog
+git clone https://github.com/addy-dclxvi/addy-dclxvi.github.io.git public</code></pre></td></tr></table>
 </div>
 </div>
+<p>The repo of generated html had to placed in public folder. The official Hugo guide asked me create
+git submodules, but I didn&rsquo;t do it. I didn&rsquo;t want things to be complicated, I want simplicity.
+Then I told hugo to create a new website.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">hugo new site ~/.blog</code></pre></td></tr></table>
+</div>
+</div>
+<p>Then picked a theme from <a href="https://themes.gohugo.io/">Hugo Themes</a>.</p>
+
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
 <figure  itemprop="associatedMedia"
   itemscope itemtype="http://schema.org/ImageObject" >
     <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunsttest.png" />
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/hugothemes.png" />
     </div>
-    <a href="https://u.cubeupload.com/addy15/dunsttest.png" itemprop="contentUrl"></a>
+    <a href="https://u.cubeupload.com/addy15/hugothemes.png" itemprop="contentUrl"></a>
   </figure>
 </div>
 
 
-<p>Of course the default look doesn&rsquo;t look like that. It needs to be configured first.
-Here is my configurations. It&rsquo;s placed in <strong>~./config/dunst/dunstrc</strong></p>
-
+<p>I was interested with <a href="https://github.com/xianmin/hugo-theme-jane">Jane by Xianmin</a>. So, I
+installed it.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">[global]
-monitor = 0
-follow = mouse
-geometry = &#34;300x60-20+48&#34;
-indicate_hidden = yes
-shrink = no
-separator_height = 0
-padding = 32
-horizontal_padding = 32
-frame_width = 2
-sort = no
-idle_threshold = 120
-font = rissole 8
-line_height = 4
-markup = full
-format = %s\n%b
-alignment = left
-show_age_threshold = 60
-word_wrap = yes
-ignore_newline = no
-stack_duplicates = false
-hide_duplicate_count = yes
-show_indicators = no
-icon_position = off
-sticky_history = yes
-history_length = 20
-browser = /usr/bin/firefox -new-tab
-always_run_script = true
-title = Dunst
-class = Dunst
-
-[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period
-
-[urgency_low]
-timeout = 4
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#8bc34a&#34;
-
-[urgency_normal]
-timeout = 8
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#ba68c8&#34;
-
-[urgency_critical]
-timeout = 0
-background = &#34;#141c21&#34;
-foreground = &#34;#93a1a1&#34;
-frame_color = &#34;#ff7043&#34;</code></pre></td></tr></table>
-</div>
-</div>
-
-<p>Geometry is the size of the notification. 300x60-20+48 means, my notification box has 300px width
-&amp; 60px height, placed on the right-top of the screen with 20px margin from the right &amp; 48px margin
-from the top. Negative value in -20 means it&rsquo;s drawed on the right. If you change the value to
-positive, the notification box would be drawed on the left of the screen. The positive value
-in +48 means it&rsquo;s drawed on the top. If you change the value to negative, the notification box
-would be drawed on the bottom of the screen.
-Padding is the margin between the text and the box outline. Frame width is how thick your
-notification box outline. But I use Debian Jessie now, the Dunst version is too old and hasn&rsquo;t
-been supporting frame yet. I will upgrade my Debian Jessie setup to Stretch soon.
-The font I use in the configurations above is custom and I haven&rsquo;t uploaded it yet. So please
-change it with a font you have. <code>format = %s\n%b</code>, %s means summary (the title of the
-notification), and %b means body (the messages of the notification). <code>\n</code> is linebreak,
-without it, your notification messages would be drawed on the right side of the title.
-The format could be improved with markup. For example, make the title bold.</p>
-
-<div class="shortcode-notice note">
-  <div class="shortcode-notice-title note">
-    
-      Update 10 December 2018
-    
-  </div>
-  <p>I have uploaded the fonts and write the description in
-<a href="/post/bitmap-fonts/">this post</a></p>
-
-</div>
-
-
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">format = &#34;&lt;b&gt;%s&lt;/b&gt;\n%b&#34;</code></pre></td></tr></table>
-</div>
-</div>
-
-<p>I didn&rsquo;t enabled it because my bitmap font doesn&rsquo;t support bold font. Creating bold bitmap
-font in 5px width of character is not very rational.</p>
-
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc"><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-rc" data-lang="rc">[shortcuts]
-close = ctrl+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period</code></pre></td></tr></table>
-</div>
-</div>
-
-<p>One of Dunst selling point is some actions could be controlled using keybind. Like <strong>Ctrl+Space</strong>
-to close the notification popup and <strong>Control+Backtick</strong> to see the previously closed notification.
-Dunst also could draw different outline color for each urgency level. In the configurations above
-I set the low urgency frame to green. The medium urgency frame to blue. And the critical urgency
-to orange. But again, my version of Dunst doesn&rsquo;t support frame.</p>
-
-<h2 id="utilization">Utilization</h2>
-
-<p>Dunst by default handles every notification sent by any applications.
-But we could playing around with custom messages to send. This actually also works on any
-notification daemon, not only Dunst. But it looks even cooler if we did it on Dunst.</p>
-
-<h3 id="showing-time">Showing Time</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Current Time&#34;</span> <span class="o">(</span>date<span class="o">)</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Or with formating</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Current Time&#34;</span> <span class="o">(</span>date +<span class="s2">&#34;%a %-d %b at %H:%M&#34;</span><span class="o">)</span></code></pre></td></tr></table>
-</div>
-</div>
-
-
-<div class="box">
-<figure  itemprop="associatedMedia"
-  itemscope itemtype="http://schema.org/ImageObject" >
-    <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunsttime.png" />
-    </div>
-    <a href="https://u.cubeupload.com/addy15/dunsttime.png" itemprop="contentUrl"></a>
-  </figure>
-</div>
-
-
-<p>We could add keybind to our DE/WM to call that command. So we could live without statusbar.
-I use Openbox, so maybe like this</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;keybind</span> <span class="na">key=</span><span class="s">&#34;W-t&#34;</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;action</span> <span class="na">name=</span><span class="s">&#34;Execute&#34;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;command&gt;</span>notify-send &#34;Current Time&#34; (date)<span class="nt">&lt;/command&gt;</span>
-   <span class="nt">&lt;/action&gt;</span>
-<span class="nt">&lt;/keybind&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># Clone the theme</span>
+<span class="nb">cd</span> ~/.blog/themes
+git clone https://github.com/xianmin/hugo-theme-jane jane
+<span class="c1"># Then Copy the default configuration</span>
+<span class="nb">cd</span> ~/.blog
+cp themes/jane/exampleSite/config.toml .
+<span class="c1"># Edit the configuration file to fill your necessity</span></code></pre></td></tr></table>
 </div>
 </div>
-<p>It will send the time info if I hit <strong>Super+T</strong>.</p>
-
-<h3 id="showing-now-playing">Showing Now Playing</h3>
-
-<p>I <a href="/post/configuring-ncmpcpp">use mpd &amp; ncmpcpp</a>, so I could get the music info using <strong>mpc</strong></p>
+<h3 id="testing-the-website-in-localhost">Testing The Website in Localhost</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish"><span class="lnt">1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fish" data-lang="fish">notify-send <span class="s2">&#34;Now Playing&#34;</span> <span class="o">(</span>mpc current<span class="o">)</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> ~/.blog
+hugo server -b https://localhost:1313/</code></pre></td></tr></table>
 </div>
 </div>
+<p>When the first time I launched it. I didn&rsquo;t have any article. To create a new article</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># Better to left the Hugo daemon from the command above running</span>
+<span class="c1"># Open a new terminal for this</span>
+<span class="nb">cd</span> ~/.blog
+hugo new posts/automatically-generate-openbox-menu.md</code></pre></td></tr></table>
+</div>
+</div>
+<p>Then I edited the new article in <strong>posts/automatically-generate-openbox-menu.md</strong>.
+After writing some sentences and saved it. I opened a web browser to access
+<strong><a href="http://localhost:1313/">http://localhost:1313/</a></strong>.</p>
+
+<h3 id="editing-the-theme">Editing The Theme</h3>
+
+<p>I decided not to edit anything in theme folder. So, if the theme was updated, no need to worry
+about files being overwritten. I customized the visual using
+<a href="https://github.com/addy-dclxvi/blog/blob/master/static/css/custom.css">~/.blog/static/css/custom.css</a>
+file.</p>
+
+<h3 id="pushing-the-content">Pushing The Content</h3>
+
+<p>I Stopped the Hugo daemon. Then build the website using <code>hugo</code> command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> ~/.blog
+hugo</code></pre></td></tr></table>
+</div>
+</div>
+<p>Then Hugo generated the html and placed it in <strong>~/.blog/public</strong> folder. Next step just <code>git push</code>
+like usual. I needed to do it both in <strong>~/.blog</strong> folder and in <strong>~/.blog/public</strong> folder. The
+website then instantly available at <a href="https://addy-dclxvi.github.io/">https://addy-dclxvi.github.io/</a></p>
+
 
 
 <div class="box">
 <figure  itemprop="associatedMedia"
   itemscope itemtype="http://schema.org/ImageObject" >
     <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/dunstmpc.png" />
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/hugoblog.png" />
     </div>
-    <a href="https://u.cubeupload.com/addy15/dunstmpc.png" itemprop="contentUrl"></a>
+    <a href="https://u.cubeupload.com/addy15/hugoblog.png" itemprop="contentUrl"></a>
   </figure>
 </div>
 
 
-<p>Do you know? Ncmpcpp support <em>execute a command on song change</em> in its configurations.
-So, we could make ncmpcpp send a notification on song change. Just try it.
-I&rsquo;m still on Jessie, and again, the ncmpcpp version on Debian Jessie is too old
-and doesn&rsquo;t support that command. So, I couldn&rsquo;t give an example.
-Maybe the code is like this. Hopefully it works.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-ncmpcpp" data-lang="ncmpcpp"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-ncmpcpp" data-lang="ncmpcpp">execute_on_song_change = notify-send &#34;Now Playing ♫&#34; (mpc current)</code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="any-many-other-possibilities">Any Many Other Possibilities</h3>
-
-<p>You just need to use your imagination to unleash your creativity.</p>
-
-<div class="shortcode-notice info">
-  <div class="shortcode-notice-title info">
-    
-      info
-    
-  </div>
-  <p>I <a href="/post/fish-shell">use fish</a>, so the subtitution command is <code>(command)</code>.
-If you&rsquo;re using bash or any POSIX compliance shell, the subtitution command is <code>$(command)</code></p>
-
-</div>
-
+<h2 id="end">End</h2>
 
 <p>And as always, thanks for reading!</p>
 
@@ -686,7 +542,7 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Monday, 10 Dec 2018</span>
+    <span class="item-content">Tuesday, 22 Jan 2019</span>
   </p>
   
   <p class="copyright-item">
@@ -715,33 +571,16 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://addy-dclxvi.github.io/tags/linux/">linux</a>
-          <a href="https://addy-dclxvi.github.io/tags/ricing/">ricing</a>
-          <a href="https://addy-dclxvi.github.io/tags/dunst/">dunst</a>
-          <a href="https://addy-dclxvi.github.io/tags/notification/">notification</a>
-          <a href="https://addy-dclxvi.github.io/tags/minimal/">minimal</a>
+          <a href="https://addy-dclxvi.github.io/tags/hugo/">hugo</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/bitmap-fonts/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Several Custom Bitmap Fonts</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/post/configuring-ncmpcpp/">
-            <span class="next-text nav-default">My Way of Configuring Ncmpcpp Music Player</span>
+          <a class="next" href="/post/urxvtd/">
+            <span class="next-text nav-default">Use URxvt Daemon Mode to Decrease The Resources Usage</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
@@ -777,7 +616,7 @@ If you&rsquo;re using bash or any POSIX compliance shell, the subtitution comman
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://addy-dclxvi.github.io/post/dunst/";
+      this.page.url = "https://addy-dclxvi.github.io/post/hugo/";
     };
     function load_disqus() {
       

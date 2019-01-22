@@ -25,6 +25,17 @@ Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, play
     </item>
     
     <item>
+      <title>How I Built This Blog Using Hugo Static Site Generator</title>
+      <link>https://addy-dclxvi.github.io/post/hugo/</link>
+      <pubDate>Tue, 22 Jan 2019 18:09:57 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/hugo/</guid>
+      
+        <description>Introduction According to its GitHub README, Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. Hugo relies on Markdown files with front matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account.</description>
+      
+    </item>
+    
+    <item>
       <title>Use URxvt Daemon Mode to Decrease The Resources Usage</title>
       <link>https://addy-dclxvi.github.io/post/urxvtd/</link>
       <pubDate>Mon, 21 Jan 2019 20:28:52 +0700</pubDate>
