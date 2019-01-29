@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>How I Built This Blog Using Hugo Static Site Generator - Addy&#39;s Blog</title>
+  <title>My Openbox Configurations - Addy&#39;s Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,8 +22,8 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Addy" /><meta name="description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme" />
-<meta name="keywords" content="linux, ricing, blog, website, debian, guide, hugo, ssg, static, site, generator, minimal, simple" />
+<meta name="author" content="Addy" /><meta name="description" content="Explanation of my Openbox Configurations and how to use it" />
+<meta name="keywords" content="linux, ricing, openbox, guide, configurations, debian, minimal, guide" />
 
 
 
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.51" />
 
 
-<link rel="canonical" href="https://addy-dclxvi.github.io/post/hugo/" />
+<link rel="canonical" href="https://addy-dclxvi.github.io/post/my-openbox/" />
 
 
 
@@ -58,26 +58,26 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="How I Built This Blog Using Hugo Static Site Generator" />
-<meta property="og:description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme" />
+<meta property="og:title" content="My Openbox Configurations" />
+<meta property="og:description" content="Explanation of my Openbox Configurations and how to use it" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://addy-dclxvi.github.io/post/hugo/" /><meta property="article:published_time" content="2019-01-22T18:09:57&#43;07:00"/>
-<meta property="article:modified_time" content="2019-01-22T18:09:57&#43;07:00"/>
+<meta property="og:url" content="https://addy-dclxvi.github.io/post/my-openbox/" /><meta property="article:published_time" content="2019-01-29T20:42:05&#43;07:00"/>
+<meta property="article:modified_time" content="2019-01-29T20:42:05&#43;07:00"/>
 
-<meta itemprop="name" content="How I Built This Blog Using Hugo Static Site Generator">
-<meta itemprop="description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme">
-
-
-<meta itemprop="datePublished" content="2019-01-22T18:09:57&#43;07:00" />
-<meta itemprop="dateModified" content="2019-01-22T18:09:57&#43;07:00" />
-<meta itemprop="wordCount" content="769">
+<meta itemprop="name" content="My Openbox Configurations">
+<meta itemprop="description" content="Explanation of my Openbox Configurations and how to use it">
 
 
+<meta itemprop="datePublished" content="2019-01-29T20:42:05&#43;07:00" />
+<meta itemprop="dateModified" content="2019-01-29T20:42:05&#43;07:00" />
+<meta itemprop="wordCount" content="1165">
 
-<meta itemprop="keywords" content="hugo," />
+
+
+<meta itemprop="keywords" content="linux,ricing,openbox," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How I Built This Blog Using Hugo Static Site Generator"/>
-<meta name="twitter:description" content="Just want to share my experience of my first time creating a website using Hugo static site generator with Jane theme"/>
+<meta name="twitter:title" content="My Openbox Configurations"/>
+<meta name="twitter:description" content="Explanation of my Openbox Configurations and how to use it"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -310,18 +310,18 @@ enable_page_level_ads: true
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">How I Built This Blog Using Hugo Static Site Generator</h1>
+      <h1 class="post-title">My Openbox Configurations</h1>
       
       <div class="post-meta">
-        <time datetime="2019-01-22" class="post-time">
-          Tuesday, 22 Jan 2019
+        <time datetime="2019-01-29" class="post-time">
+          Tuesday, 29 Jan 2019
         </time>
         <div class="post-category">
-            <a href="https://addy-dclxvi.github.io/categories/blogging/"> Blogging </a>
+            <a href="https://addy-dclxvi.github.io/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 769 words </span>
-          <span class="more-meta"> 4 min read </span>
+        <span class="more-meta"> 1165 words </span>
+          <span class="more-meta"> 6 min read </span>
 
         
         
@@ -340,90 +340,153 @@ enable_page_level_ads: true
 
 <h2 id="introduction">Introduction</h2>
 
-<p>According to its GitHub README, Hugo is a static HTML and CSS website generator written in Go. It
-is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and
-templates and renders them into a full HTML website. Hugo relies on Markdown files with front
-matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and
-other systems where you don’t have a privileged account. Hugo renders a typical website of
-moderate size in a fraction of a second. A good rule of thumb is that each piece of content render
-in around 1 millisecond. Hugo is designed to work well for any kind of website including blogs,
-tumbles, and docs.</p>
+<p>This post is an explanation about my Openbox configurations and how to use them. Openbox is my
+favourite window manager, and it&rsquo;s the first window manager I use. At first, I didn&rsquo;t even know
+how to make Openbox worked. When I installed it and ran it, I just got a blank black screen and
+didn&rsquo;t even know how to launch any application. I followed several guide but couldn&rsquo;t understand
+it, I gave up. But after a while, I heard about Crunchbang. It came with preconfigured Openbox,
+and a complete set of software to make Openbox usable as a desktop. I really enjoyed Crunchbang
+and kept playing around with it. Playing with Crunchbang meaned learning. I learned a lot about
+configuration files and theming. Also about modular applications that could work right with
+Openbox. I also tried a lot other popular window managers, but still couldn&rsquo;t leave Openbox.</p>
 
-<p>At first, I didn&rsquo;t even know how to build a static website. People on Dotfiles ID recommended me to
-try to build a website using SSG (Static Site Generator) like Jekyll, Hexo, or Hugo. I didn&rsquo;t have
-programming languange knowledge, so I worried it would be hard. But after seeing a beautiful theme
-list, I felt motivated to try it. After that, I duckduckwent about popular SSG. The big four were</p>
+<p>After I thought I had understood enough, I tried to build a clean Openbox setup with Arch, and
+then Void. But they were pretty fragile, I dealed with a lot of breaks there. So, now I use Debian.
+But I still keep my Void setup, sometimes I want to try a new version of software that Debian
+doesn&rsquo;t provide. I don&rsquo;t want to use Debian Testing or Sid, it will defeat my purpose of using
+Debian.</p>
 
-<ol>
-<li>Jekyll</li>
-<li>Hexo</li>
-<li>Gatsby</li>
-<li>Hugo</li>
-</ol>
-
-<p>I was interested with Hugo, simply because it distributed the <strong>*.deb</strong> package. I use Debian, so
-it makes me easier to install it. And even better it doesn&rsquo;t pull any dependency, not even the Go
-compiler. So, it keeps my setup simple. The other SSG are based on things I don&rsquo;t understand, which
-needs to setup a lot thing like node.js, ruby, and other things I don&rsquo;t understand. I don&rsquo;t have a
-time to learn them. So, Hugo is perfect SSG for me. The unintentional advantage, Hugo is really
-fast at building website.</p>
+<p>Despite of distrohopping a lot, my Openbox setup mostly remains the same with Crunchbang
+or BunsenLabs formula. By the way, I install Debian from the minimal CD with everything unchecked
+on the tasksel. Then I only install packages I need, the result even more minimal than Arch with
+similar setup due to Debian package splitting. For example, instead of installing full Libre
+Office Suite, I can cherrypick Libre Office Writer &amp; Libre Office Calc only. But I still don&rsquo;t have
+a time to write a documentation about my full Debian setup, might be next time. In this article, I will only explain about Openbox and Openbox related packages.</p>
 
 <h2 id="installation">Installation</h2>
 
-<p>Well, it&rsquo;s actually available on Debian repository since Stretch. But the package version is too
-old. Most of Hugo theme reqires higher version of Hugo. So, I went to its
-<a href="https://github.com/gohugoio/hugo/releases">Release Page</a> on GitHub to get the higher package
-version in <strong>*.deb</strong> format. Installing package outside the repo is actually unrecommended,
-but Hugo doesn&rsquo;t pull any dependencies. So, if something goes wrong, I just need to remove Hugo,
-other packages will not be affected. Fortunately, until now I never had any issue with the
-sideloaded Hugo. After I downloaded it, I installed it using <strong>dpkg</strong>.</p>
+<p>Beside installing Openbox, I also install some essential supporting packages</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> Downloads
-sudo dpkg -i hugo_0.51_Linux-32bit.deb</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo apt-get install openbox suckless-tools compton hsetroot xsettingsd lxappearance scrot conky lemonbar openbox-menu lxmenu-data</code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="building-a-website">Building A Website</h2>
+<ul>
+<li>Compton is a compositor to provide some desktop effects like shadow, transparency, fade, and
+transiton.</li>
+<li>Hsetroot is a wallpaper handler. Openbox has no wallpaper handler by default. Openbox comes with
+<code>fbsetroot</code> &amp; <code>fbsetbg</code> by default. But they are not an actual wallpaper handler. They are just
+wrapper scripts to find any wallpaper handler available and use it as fluxbox wallpaper handler.
+When I install Debian, I start from minimal install. So, I don&rsquo;t have any wallpaper handler that
+support JPG/PNG by default. So, I choose <code>hsetroot</code>.</li>
+<li>Suckless Tools are several utility made by <a href="https://suckless.org">suckless.org</a>, but actually I
+only need <code>dmenu</code>. Unfortunately the package is not splitted, so I need to pull them all.</li>
+<li>Xsettingsd is a simple settings daemon to load fontconfig and some other options. Without this,
+fonts would look rasterized in some applications.</li>
+<li>LXAppearance is used for changing GTK theme icons, fonts, and some other preferences.</li>
+<li>Scrot is a simple screenshot taking app. Full explanation in
+<a href="/post/scrot/">this article</a>.</li>
+<li>Lemonbar is a bar or panel, and I use Conky to generate statusline for Lemonbar. Full explanation
+in <a href="/post/lemonbar-conky/">this article</a>.</li>
+<li>Openbox Menu is a menu generator gathering data from LXMenu Data. Full explanation in
+<a href="/post/autogenerate-openbox-menu/">this article</a></li>
+</ul>
 
-<h3 id="creating-two-repositories-on-github">Creating Two Repositories on GitHub</h3>
+<p>Then, get my Openbox configurations from <a href="/file/openbox.tar.gz">this</a> archive. Extract it to your
+home directory. So, you will get the <strong>.config</strong> and other directories in your home.
+I use URxvt as default terminal. If you&rsquo;re interested, check <a href="/post/configuring-urxvt/">this</a>
+article. I use Dunst as notification daemon. If you&rsquo;re interested, check <a href="/post/dunst/">this</a>
+article. I use ncmpcpp as music player. If you&rsquo;re interested, check
+<a href="/post/configuring-ncmpcpp/">this</a> article. I use Fish as interactive shell. If you&rsquo;re interested,
+check <a href="/post/fish-shell/">this</a> article.</p>
 
-<p>I hosted my blog on GitHub. So, I made two repositories on GitHub. One to host the generated html.
-I named the repository <strong>addy-dclxvi/addy-dclxvi.github.io</strong>. It had to be
-<strong>&lt;username&gt;.github.io</strong>, to make it instantly accesible from
-<strong>https://&lt;username&gt;.github.io</strong>. And one more to put the source code to keep the spirit of Open
-Source. I simply named the repository <strong>addy-dclxvi/blog</strong>.</p>
+<h2 id="explanations">Explanations</h2>
 
-<h3 id="cloning-the-empty-repo">Cloning The Empty Repo</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># I put it on ~/.blog folder</span>
-git clone https://github.com/addy-dclxvi/blog.git .blog
-<span class="nb">cd</span> .blog
-git clone https://github.com/addy-dclxvi/addy-dclxvi.github.io.git public</code></pre></td></tr></table>
-</div>
-</div>
-<p>The repo of generated html had to placed in public folder. The official Hugo guide asked me create
-git submodules, but I didn&rsquo;t do it. I didn&rsquo;t want things to be complicated, I want simplicity.
-Then I told hugo to create a new website.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell">hugo new site ~/.blog</code></pre></td></tr></table>
-</div>
-</div>
-<p>Then picked a theme from <a href="https://themes.gohugo.io/">Hugo Themes</a>.</p>
+<h3 id="config-openbox">~/.config/openbox/</h3>
+
+<p>It&rsquo;s the folder where Openbox configurations are stored, there is several files inside.</p>
+
+<ul>
+<li><strong>autostart</strong> contains what applications need to be started on login</li>
+<li><strong>menu.xml</strong> contains items displayed when we do right click on the desktop</li>
+<li><strong>rc.xml</strong> is the main Openbox configuration file. It stores what items displayed in the
+titlebar, how many workspace we have, what font is used in the titlebar, keybinds, mousebinds,
+window behavior, and many others.</li>
+</ul>
+
+<h3 id="scripts">~/.scripts/</h3>
+
+<p>I put three files in the archive. They are just wrapper scripts.</p>
+
+<ul>
+<li><strong>launch</strong> is a wrapper script to launch dmenu with custom arguments.</li>
+<li><strong>pulsevol</strong> is a script I stole from <a href="https://github.com/okitavera">Vera&rsquo;s</a> dotfiles to make me
+easier to control the pulseaudio volume.</li>
+<li><strong>screeny</strong> is a wrapper script for taking screenshot using scrot then open the result instantly
+using the default image viewer.</li>
+</ul>
+
+<h2 id="launch">Launch</h2>
+
+<p>Logout then login again with Openbox session in your login manager. And welcome to Openbox.</p>
+
+<h2 id="keybinds">Keybinds</h2>
+
+<p>Have you read my <a href="/post/my-fluxbox/">previous article about my Fluxbox configurations</a>?
+Yes, they are pretty similar. My other WMs are also have similar keybinds. So, even I frequently
+switched WM, I will not lost.</p>
+
+<ul>
+<li><strong>Super + Enter</strong> launch URxvt</li>
+<li><strong>Super + D</strong> launch dmenu with wrapper script</li>
+<li><strong>Super + Space</strong> launch Openbox Menu, just like right click on the desktop</li>
+<li><strong>Alt + Tab</strong> switch to next window</li>
+<li><strong>Alt + Shift + Tab</strong> switch to previous window</li>
+<li><strong>Control + Alt + Left/Right</strong> switch to previous/next workspace</li>
+<li><strong>Control + Alt + Up/Down</strong>  switch to previous/next window, just like Alt + Tab</li>
+<li><strong>Super + Arrows</strong> &ldquo;Aero Snap&rdquo;</li>
+<li><strong>Super + 1-4</strong> switch to workspace 1-4</li>
+<li><strong>Super + Shift + 1-4</strong> take the current active window to workspace 1-4</li>
+<li><strong>Super + Shift + Left/Right</strong> take the current active window to prev/next workspace</li>
+<li><strong>Super + Alt + Arrows</strong> switch focus to other window in the desired direction</li>
+<li><strong>Super + Control + Arrows</strong> teleport</li>
+<li><strong>Super + A</strong> central the current focus window</li>
+<li><strong>Super + C</strong> close</li>
+<li><strong>Super + Z</strong> minimize</li>
+<li><strong>Super + F</strong> maximize</li>
+<li><strong>Super + T</strong> toggle the window decoration</li>
+<li><strong>Super + U</strong> roll up the window</li>
+<li><strong>Super + Shift + Backspace</strong> reload Openbox, do this after modify the configuration files</li>
+<li><strong>Double Click Titlebar</strong> maximize</li>
+<li><strong>Scroll Up Titlebar</strong> roll up window</li>
+<li><strong>Scroll Down Titlebar</strong> restore rolled up window</li>
+<li><strong>Double Click Desktop</strong> list opened programs, so I could survive without a taskbar</li>
+<li>..More keybinds just read the <em>~/.config/openbox/rc.xml</em> file</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li>Please inspect the code before use.</li>
+<li>These configurations are designed for my daily driver, probably not suitable for you.
+So, please modify them.</li>
+<li>I usually use <em>tint2</em> as a panel, but these months I want to breath some fresh air. So, I use
+Lemonbar.</li>
+<li>None of my apps are using system tray, so I don&rsquo;t install any system tray handler. If you need
+a system tray, you could use <em>trayer</em> or <em>stalonetray</em>. Both are modular and not binded to any
+WM or DE.</li>
+<li>My included Openbox theme is designed to match with Arc GTK Theme.</li>
+<li>Dream Theater will release a new album next month.</li>
+<li>I use <em>systemd</em>, so the command to shutdown, reboot, and hibernate in Openbox Menu involves
+<code>systemctl</code> command. On <em>non-systemd</em> system, the command will be different.</li>
+</ul>
+
+<h2 id="screenshoots">Screenshoots</h2>
+
+<p>Remains the same as in the previouses articles.</p>
 
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -431,88 +494,12 @@ Then I told hugo to create a new website.</p>
 <figure  itemprop="associatedMedia"
   itemscope itemtype="http://schema.org/ImageObject" >
     <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/hugothemes.png" />
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/myopenboxmenu.png" />
     </div>
-    <a href="https://u.cubeupload.com/addy15/hugothemes.png" itemprop="contentUrl"></a>
+    <a href="https://u.cubeupload.com/addy15/myopenboxmenu.png" itemprop="contentUrl"></a>
   </figure>
 </div>
 
-
-<p>I was interested with <a href="https://github.com/xianmin/hugo-theme-jane">Jane by Xianmin</a>. So, I
-installed it.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># Clone the theme</span>
-<span class="nb">cd</span> ~/.blog/themes
-git clone https://github.com/xianmin/hugo-theme-jane jane
-<span class="c1"># Then Copy the default configuration</span>
-<span class="nb">cd</span> ~/.blog
-cp themes/jane/exampleSite/config.toml .
-<span class="c1"># Edit the configuration file to fill your necessity</span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="testing-the-website-in-localhost">Testing The Website in Localhost</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> ~/.blog
-hugo server -b https://localhost:1313/</code></pre></td></tr></table>
-</div>
-</div>
-<p>When the first time I launched it. I didn&rsquo;t have any article. To create a new article</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># Better to left the Hugo daemon from the command above running</span>
-<span class="c1"># Open a new terminal for this</span>
-<span class="nb">cd</span> ~/.blog
-hugo new posts/automatically-generate-openbox-menu.md</code></pre></td></tr></table>
-</div>
-</div>
-<p>Then I edited the new article in <strong>posts/automatically-generate-openbox-menu.md</strong>.
-After writing some sentences and saved it. I opened a web browser to access
-<strong><a href="http://localhost:1313/">http://localhost:1313/</a></strong>.</p>
-
-<h3 id="editing-the-theme">Editing The Theme</h3>
-
-<p>I decided not to edit anything in theme folder. So, if the theme was updated, no need to worry
-about files being overwritten. I customized the visual using
-<a href="https://github.com/addy-dclxvi/blog/blob/master/static/css/custom.css">~/.blog/static/css/custom.css</a>
-file.</p>
-
-<h3 id="pushing-the-content">Pushing The Content</h3>
-
-<p>I Stopped the Hugo daemon. Then build the website using <code>hugo</code> command.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> ~/.blog
-hugo</code></pre></td></tr></table>
-</div>
-</div>
-<p>Then Hugo generated the html and placed it in <strong>~/.blog/public</strong> folder. Next step just <code>git push</code>
-like usual. I needed to do it both in <strong>~/.blog</strong> folder and in <strong>~/.blog/public</strong> folder. The
-website then instantly available at <a href="https://addy-dclxvi.github.io/">https://addy-dclxvi.github.io/</a></p>
 
 
 
@@ -520,9 +507,9 @@ website then instantly available at <a href="https://addy-dclxvi.github.io/">htt
 <figure  itemprop="associatedMedia"
   itemscope itemtype="http://schema.org/ImageObject" >
     <div class="img">
-      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/hugoblog.png" />
+      <img itemprop="thumbnail" src="https://u.cubeupload.com/addy15/myopenboxvim.png" />
     </div>
-    <a href="https://u.cubeupload.com/addy15/hugoblog.png" itemprop="contentUrl"></a>
+    <a href="https://u.cubeupload.com/addy15/myopenboxvim.png" itemprop="contentUrl"></a>
   </figure>
 </div>
 
@@ -542,7 +529,7 @@ website then instantly available at <a href="https://addy-dclxvi.github.io/">htt
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">Tuesday, 22 Jan 2019</span>
+    <span class="item-content">Tuesday, 29 Jan 2019</span>
   </p>
   
   <p class="copyright-item">
@@ -571,29 +558,18 @@ website then instantly available at <a href="https://addy-dclxvi.github.io/">htt
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://addy-dclxvi.github.io/tags/hugo/">hugo</a>
+          <a href="https://addy-dclxvi.github.io/tags/linux/">linux</a>
+          <a href="https://addy-dclxvi.github.io/tags/ricing/">ricing</a>
+          <a href="https://addy-dclxvi.github.io/tags/openbox/">openbox</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/my-openbox/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">My Openbox Configurations</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/post/urxvtd/">
-            <span class="next-text nav-default">Use URxvt Daemon Mode to Decrease The Resources Usage</span>
+          <a class="next" href="/post/hugo/">
+            <span class="next-text nav-default">How I Built This Blog Using Hugo Static Site Generator</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
@@ -629,7 +605,7 @@ website then instantly available at <a href="https://addy-dclxvi.github.io/">htt
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://addy-dclxvi.github.io/post/hugo/";
+      this.page.url = "https://addy-dclxvi.github.io/post/my-openbox/";
     };
     function load_disqus() {
       

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Addy</copyright>
-    <lastBuildDate>Tue, 27 Nov 2018 18:44:21 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 20:42:05 +0700</lastBuildDate>
     
 	<atom:link href="https://addy-dclxvi.github.io/tags/openbox/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Openbox Configurations</title>
+      <link>https://addy-dclxvi.github.io/post/my-openbox/</link>
+      <pubDate>Tue, 29 Jan 2019 20:42:05 +0700</pubDate>
+      
+      <guid>https://addy-dclxvi.github.io/post/my-openbox/</guid>
+      <description>Introduction This post is an explanation about my Openbox configurations and how to use them. Openbox is my favourite window manager, and it&amp;rsquo;s the first window manager I use. At first, I didn&amp;rsquo;t even know how to make Openbox worked. When I installed it and ran it, I just got a blank black screen and didn&amp;rsquo;t even know how to launch any application. I followed several guide but couldn&amp;rsquo;t understand it, I gave up.</description>
+    </item>
     
     <item>
       <title>Automatically Generate Openbox Applications Menu</title>
